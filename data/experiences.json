@@ -1,0 +1,163 @@
+[
+  {
+    "slug": "london-premier-league-club-tour",
+    "name": "London Premier League Club Tour",
+    "city": "London",
+    "country": "Scotland",
+    "shortDescription": "Experience the ultimate Premier League fan tour in London — live matches, thrilling European nights under the lights, exclusive Q&As with former managers, VIP social events, and iconic city sightseeing.",
+    "numberOfDays": 7,
+    "ageBand": "7 - 16 Years",
+    "season": "September - December",
+    "gallery": [
+
+    ],
+    "programOverview": "Immerse yourself in the heart of English football with the Premier League Experience in London — the ultimate trip for passionate fans. Witness live Premier League and European fixtures under the floodlights, featuring London’s biggest clubs. Between matchdays, enjoy exclusive evening events with former managers and players, explore the city’s most famous landmarks, and indulge in unforgettable dining and social experiences. This is more than a football tour — it’s the definitive London football adventure.",
+    "programHighlights": [
+      " Watch live Premier League and European matches in London",
+      "Exclusive Q&A evenings with former Premier League managers",
+      "Premium social events in top bars and restaurants",
+      "Guided tours of London’s iconic landmarks",
+      "Expert-hosted football insights and match discussions"
+    ],
+    "whatsIncluded": [
+      "Competitive fixtures in the Premier league, Champions League, Europa League and Conference league.",
+      "Exclusive stadium tours and behind-the-scenes club experiences.",
+      "High-quality accommodation with full-board meals.",
+      "Local transport for all activities, matches, and excursions.",
+      "Cultural and sightseeing experiences across London.",
+      "Tour Director support throughout for logistics and coordination."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Travel",
+        "description": "Flight. Overnight flights to London."
+      },
+      {
+        "day": 2,
+        "title": "Arrival + English Premier League Match 1",
+        "description": "Arrive London, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. Attend match 1 in English Premier League. Evening dinner and social. "
+      },
+      {
+        "day": 3,
+        "title": "Sightseeing + English Premier League Match 2",
+        "description": "London City Tour. Premier League Match 2."
+      },
+      {
+        "day": 4,
+        "title": "Academy Visit + Monday Night Football",
+        "description": "Visit a Premier League Academy. Attend Monday night match if in London or attend an Axis watch party."
+      },
+      {
+        "day": 5,
+        "title": "Sightseeing + Q&A + Champions League Match 1",
+        "description": "Stadium Tour at Arsenal, Chelsea and Fulham. Lunch with Q&A from former Premeir League manager. Champions League Match 1."
+      },
+      {
+        "day": 6,
+        "title": "Sightseeing + Q&A + Champions League Match 2",
+        "description": "Stadium Tour at Arsenal, Chelsea and Fulham. Lunch with Q&A from former Premeir League player. Champions League Match 1."
+      },
+      {
+        "day": 7,
+        "title": "Travel",
+        "description": "Departure from London, airport transfers"
+      }
+    ],
+    "developmentFocus": {
+      "fixtures": "With Axis Football Tours, teams can compete in top-level international tournaments, facing opponents from around the world. All logistics are handled — including fixtures, pitch hire, referees, and travel — ensuring a seamless, professional experience. Tournaments provide a thrilling environment that builds confidence, resilience, teamwork, and unforgettable memories on the global stage.",
+      "training": "Teams travelling with Axis Football to participate in tournaments will have the opportunity to include training sessions either delivered by the team's own coaching staff or you can be trained by coaches from local professional club academies. All players will be given a Player Development Plan (PDP) highlighting an improvement plan regardless of the level they are currently at.",
+      "classroom": "At Axis Football Tours, tournament programmes can include dedicated classroom sessions to support team preparation. Through match analysis, tactical planning, opponent scouting, role clarity, and team-identity workshops, players build confidence, understanding, and cohesion before stepping onto the pitch.",
+      "teamBonding": "During tournaments delivered as part of your Axis Football Tour, we can provide meaningful team bonding experiences to strengthen unity and performance. Through shared activities, group challenges, guided reflection, and positive social time, players build trust, communication, and resilience."
+    },
+    "accommodationMealsSafety": {
+      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs. Our accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out. We believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour. Typically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant.",
+      "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site.",
+      "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
+    }
+  },
+  {
+    "slug": "la-liga-champions-league-tour",
+    "name": "La Liga + Champions League Tour",
+    "city": "Barcelona, Madrid",
+    "country": "Spain",
+    "shortDescription": "Experience the passion of La Liga in Spain — live matches, vibrant fan culture, exclusive Q&As with football insiders, premium dining, and unforgettable sightseeing in Barcelona and Madrid.",
+    "numberOfDays": 7,
+    "ageBand": "Boys - U7 to U19, Girls - U12, U14, U16, U18",
+    "season": "September - December",
+    "gallery": [
+      "/images/experiences/premier_league_experience/Chelsea Stadium.jpg",
+      "/images/experiences/premier_league_experience/Emirates Stadium.jpg",
+      "/images/experiences/premier_league_experience/London 1.jpg",
+      "/images/experiences/premier_league_experience/London 2.jpg",
+      "/images/experiences/premier_league_experience/London 3.jpg",
+      "/images/experiences/premier_league_experience/London 4.jpg",
+      "/images/experiences/premier_league_experience/London 5.jpg",
+      "/images/experiences/premier_league_experience/Tottenham hotspur stadium.jpg"
+    ],
+    "programOverview": "Dive into the electrifying world of La Liga with an adults-only football journey crafted for true lovers of the Spanish game. Travel through Barcelona, Madrid, or Valencia as you witness world-class teams in action, soaking in the energy of Spain’s most passionate stadiums. Off the pitch, enjoy exclusive evening gatherings with former professionals or industry insiders, savour award-winning cuisine, explore iconic cultural landmarks, and experience the vibrant nightlife that makes Spanish cities legendary. This is the ultimate blend of football, culture, and premium travel — an unforgettable adventure curated by Axis Football Tours.",
+    "programHighlights": [
+      "Attend live La Liga and European fixtures in Spain’s most atmospheric stadiums.",
+      "Exceptional culinary experiences in hand-picked restaurants.",
+      "Guided cultural tours through Barcelona, Madrid, or Valencia.",
+      "Exclusive social events and insider-style football discussions."
+    ],
+    "whatsIncluded": [
+      "Tickets to top-flight La Liga fixtures and midweek European competitions",
+      "Immersive stadium tours and exclusive behind-the-scenes access at leading Spanish clubs",
+      "Premium accommodation with breakfast, lunch, and dinner provided",
+      "VIP evening event featuring a Q&A with a former La Liga coach or player",
+      "All local transportation for matches, activities, and cultural excursions",
+      "Guided cultural experiences and city tours across Barcelona, Madrid, or Valencia",
+      "Full Tour Director support ensuring smooth coordination and logistics throughout"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Travel",
+        "description": "Flight. Overnight flights to Barcelona."
+      },
+      {
+        "day": 2,
+        "title": "Arrival + Barcelona Sightseeing + FC Barcelona Match",
+        "description": "Arrive Barcelona, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. Barcelona City Tour (Sagrada Familia, Park Guell, La Rambla and stadium tour of Spotify Camp Nou. FC Barcelona home match (La Liga or UCL). Post-match drinks in El Born or a craft beer stop at Garage Beer Co."
+      },
+      {
+        "day": 3,
+        "title": "Valencia Sightseeing + Valencia Match",
+        "description": "Fast train from Barcelona to Valencia (approx. 3 hours). Check into hotel in the city centre (Carmen or Colón). Sightseeing - Valencia Cathedral + Holy Grail, Old Town / El Carmen district. Paella lunch (La Pepica or Casa Roberto). Beach beers on Malvarrosa. Optional craft beer stop: Birra & Blues. Valencia CF match at Mestalla — electric, old-school atmosphere. Nightlife: Carmen District (bars, live-music spots, patios)."
+      },
+      {
+        "day": 4,
+        "title": "Travel Madrid + Madrid Sightseeing",
+        "description": "Fast train from Valencia → Madrid (1h 40m). Check into hotel. Sightseeing Royal Palace & Almudena Cathedral. Plaza Mayor & Puerta del Sol. Retiro Park + Crystal Palace. Lunch at Mercado de San Miguel (tapas + wine). Wine tasting at Angelita Madrid or a La Mancha wine flight. Iberian ham tasting at Museo del Jamón (casual but iconic). Evening drinks in Malasaña, Chueca, or Huertas."
+      },
+      {
+        "day": 5,
+        "title": "Sightseeing Madrid + Real Madrid Match",
+        "description": "Bernabéu Stadium tour. Coffee + pastries near Castellana. Brewery visit (La Virgen or Mad Brewing). Pre-match tapas around Chamartín. Evening Real Madrid home match (La Liga or Champions League). Celebrate with drinks around Azca or back in the city centre."
+      },
+      {
+        "day": 6,
+        "title": "Sightseeing Madrid + Atletico Madrid Match",
+        "description": "Visit Toledo or Segovia (quick day trips, classic food & wine). Wine tasting at Bodega Santa Cecilia (massive selection). Head to Metropolitano Stadium for Atlético Madrid match. High speed train back to Barcelona."
+      },
+      {
+        "day": 7,
+        "title": "Travel",
+        "description": "Departure from Barcelona - Barcelona, airport transfers"
+      }
+    ],
+    "developmentFocus": {
+      "fixtures": "With Axis Football Tours, teams can compete in top-level international tournaments, facing opponents from around the world. All logistics are handled — including fixtures, pitch hire, referees, and travel — ensuring a seamless, professional experience. Tournaments provide a thrilling environment that builds confidence, resilience, teamwork, and unforgettable memories on the global stage.",
+      "training": "Teams travelling with Axis Football to participate in tournaments will have the opportunity to include training sessions either delivered by the team's own coaching staff or you can be trained by coaches from local professional club academies. All players will be given a Player Development Plan (PDP) highlighting an improvement plan regardless of the level they are currently at.",
+      "classroom": "At Axis Football Tours, tournament programmes can include dedicated classroom sessions to support team preparation. Through match analysis, tactical planning, opponent scouting, role clarity, and team-identity workshops, players build confidence, understanding, and cohesion before stepping onto the pitch. These sessions ensure teams arrive ready to compete with purpose and unity.",
+      "teamBonding": "During Tournaments delivered as part of your Axis Football Tour, we can provide meaningful team bonding experiences to strengthen unity and performance. Through shared activities, group challenges, guided reflection, and positive social time, players build trust, communication, and resilience. These moments deepen team identity and connection, helping squads compete with confidence, togetherness, and purpose on and off the pitch."
+    },
+    "accommodationMealsSafety": {
+      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs. Our accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out. We believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour. Typically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
+      "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site.",
+      "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
+    }
+  }
+]

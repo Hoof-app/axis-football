@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "celtic-coaches-convention",
+    "name": "Celtic Coaches Convention",
+    "city": "Glasgow",
+    "country": "Scotland",
+    "shortDescription": "Join an elite coaching experience at Celtic FC’s 2026 Coaches Convention—immerse in world-class training, tactical innovation, and exclusive access to Celtic’s academy and first-team environment.",
+    "numberOfDays": "7",
+    "ageBand": "Adults",
+    "season": "6th - 12th April",
+    "gallery": [],
+    "programOverview": "Experience football excellence at the Celtic Coaches Convention 2026, hosted by one of Europe’s most successful clubs. Celtic FC’s Academy has a global reputation for developing elite players through innovation, dedication, and a winning philosophy mirrored by its first team. This exclusive behind-the-scenes opportunity offers coaches of all levels invaluable insight into Celtic’s player development, performance analysis, and coaching methodology. Learn directly from the Academy and first-team staff driving Celtic’s success on domestic and international stages. Access to first-team and academy training sessions. Tactical and performance workshops and academy match anaylsis. Direct interaction with Celtic’s coaching staff. Exclusive stadium and facility tours with match tickets. Networking with global coaching peers.",
+    "whatsIncluded": [
+      "High quality accommodation and full-board meals.",
+      "Airport transfers and ground transport betrween hotel and all sessions and activities. ",
+      "Entrance to National Football Museum.",
+      "Exclusive access to Celtic FC first-team and Academy training sessions",
+      "Presentations and Q&A with Celtic’s senior and Academy coaching staff",
+      "Behind-the-scenes tours of Celtic Park, Lennoxtown, and Barrowfield training facilities",
+      "In-depth workshops on player development, sports science, and match analysis",
+      "Observation of live Academy fixtures and post-match debriefs",
+      "Insights into recruitment, performance pathways, and youth development philosophy",
+      "Networking sessions with coaches from around the world",
+      "Hospitality access on matchday, including pre- and post-game experiences",
+      "Tour Director support throughout for logistics and coordination."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Travel",
+        "description": "Overnight flights to Edinburgh."
+      },
+      {
+        "day": 2,
+        "title": "Arrival + Sightseeing",
+        "description": "Arrive Edinburgh, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. National Stadium Football Museum Tour. Evening dinner and Q&A with former professional manager or coach. "
+      },
+      {
+        "day": 3,
+        "title": "Celtic Coaches Convention Day 1",
+        "description": "Sessions and matches as provided by the Celtic Academy Staff. "
+      },
+      {
+        "day": 4,
+        "title": "Celtic Coaches Convention Day 2",
+        "description": "Sessions and matches as provided by the Celtic Academy Staff. "
+      },
+      {
+        "day": 5,
+        "title": "Celtic Coaches Convention Day 3",
+        "description": "Sessions and matches as provided by the Celtic Academy Staff. "
+      },
+      {
+        "day": 6,
+        "title": "Celtic Coaches Convention Day 3",
+        "description": "Sessions and matches as provided by the Celtic Academy Staff. "
+      },
+      {
+        "day": 8,
+        "title": "Travel",
+        "description": "Departure from Edinburgh, airport transfers"
+      }
+    ],
+    "developmentFocus": {
+      "academyVisits": "All Axis Football Tours Coach Education experiences are carefully designed to partner with leading academies that offer the greatest learning opportunities. Coaches gain invaluable insights into elite player development within a supportive, zero-pressure environment, encouraging open discussion, shared learning, and genuine growth—ensuring every participant leaves inspired, informed, and more confident in their coaching journey.",
+      "clinics": "The on-field practical clinics are delivered to the highest professional standards by expert coaches and accomplished presenters. Each session is fully interactive, encouraging participation, discussion, and real-time feedback—ensuring every coach can engage directly, ask the questions that matter most, and gain maximum benefit from every practical learning opportunity.",
+      "workshopSessions": "The classroom workshops provide an in-depth exploration of every stage of the player development pathway—covering technical, tactical, physical, and psycho-social aspects of the game. Led by experienced educators, these interactive sessions encourage open discussion, critical thinking, and collaboration, ensuring every coach gains meaningful, practical insights to enhance their own coaching environment.",
+      "qaSessions": "The Q&A sessions are a standout feature of every Axis Football Tours Coach Education experience. Carefully selected guest speakers—ranging from top academy directors to experienced professional managers—share genuine insights in an intimate, relaxed setting. These interactive discussions allow coaches to ask meaningful questions, exchange ideas, and gain valuable perspectives from the game’s most respected minds."
+    },
+    "accommodationMealsSafety": {
+      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs. Our accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out. We believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour.Typically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
+      "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site. ",
+      "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
+    }
+  }
+]

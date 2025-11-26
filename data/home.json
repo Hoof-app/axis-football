@@ -1,0 +1,127 @@
+{
+    "hero": {
+        "title": "Experience World-Class Soccer Tours",
+        "subtitle": "Immersive soccer development trips for players, coaches and parents to bucket list destinations across the UK, Europe and the USA.",
+        "image": "/images/hero/home-hero.jpg",
+        "features": [
+            {
+                "label": "3–14 Days"
+            },
+            {
+                "label": "U12 – Adults Age Range"
+            },
+            {
+                "label": "UEFA/USSF Training"
+            },
+            {
+                "label": "Matched Levels Fixtures"
+            },
+            {
+                "label": "Tailored Plans"
+            },
+            {
+                "label": "Elite Level Facilities"
+            },
+            {
+                "label": "Iconic Experiences"
+            }
+        ],
+        "primaryCta": {
+            "label": "Enquire Now",
+            "href": "/contact"
+        }
+    },
+    "featured": {
+        "tournament": {
+            "slug": "salou-youth-cup",
+            "name": "Salou Youth Cup",
+            "city": "Salou",
+            "country": "Spain",
+            "image": "/images/tournaments/salou-youth-cup.jpg"
+        },
+        "trainingCamp": {
+            "slug": "arsenal-training-experience",
+            "name": "Arsenal Training Experience",
+            "city": "London",
+            "country": "England",
+            "image": "/images/training-camps/arsenal-training-experience.jpg"
+        },
+        "coachEducation": {
+            "slug": "celtic-coaches-convention",
+            "name": "Celtic Coaches Convention",
+            "city": "Glasgow",
+            "country": "Scotland",
+            "image": "/images/coach-education/celtic-coaches-convention.jpg"
+        }
+    },
+    "whyChoose": {
+        "title": "Why Choose Axis Football",
+        "intro": "",
+        "items": [
+            {
+                "title": "30+ year experience",
+                "description": "Delivering world-class training camps across the globe."
+            },
+            {
+                "title": "Your Money Protected",
+                "description": "Partnerships that protect customer payments and deposits."
+            },
+            {
+                "title": "Tour Management",
+                "description": "Dedicated Tour Directors with 24/7 on-ground support."
+            }
+        ]
+    },
+    "trustedPartners": [
+        {
+            "slug": "elite-tournaments",
+            "name": "Elite Tournaments",
+            "logo": "/images/partners/elite-tournaments.png"
+        },
+        {
+            "slug": "coachfx360",
+            "name": "CoachFX360",
+            "logo": "/images/partners/coachfx360.png"
+        },
+        {
+            "slug": "elite-promotions-group",
+            "name": "Elite Promotions Group",
+            "logo": "/images/partners/elite-promotions-group.png"
+        },
+        {
+            "slug": "fuse",
+            "name": "Fuse",
+            "logo": "/images/partners/fuse.png"
+        },
+        {
+            "slug": "pts",
+            "name": "PTS",
+            "logo": "/images/partners/pts.png"
+        },
+        {
+            "slug": "tms",
+            "name": "TMS",
+            "logo": "/images/partners/tms.png"
+        },
+        {
+            "slug": "elements",
+            "name": "Elements",
+            "logo": "/images/partners/elements.png"
+        },
+        {
+            "slug": "coerver",
+            "name": "Coerver",
+            "logo": "/images/partners/coerver.png"
+        },
+        {
+            "slug": "onward-group",
+            "name": "Onward Group",
+            "logo": "/images/partners/onward-group.png"
+        },
+        {
+            "slug": "celtic-soccer-academy",
+            "name": "Celtic Soccer Academy",
+            "logo": "/images/partners/celtic-soccer-academy.png"
+        }
+    ]
+}
