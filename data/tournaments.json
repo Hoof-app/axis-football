@@ -8,7 +8,14 @@
     "numberOfDays": 7,
     "ageBand": "7 - 16 Years",
     "season": "7th - 9th August 2026",
-    "gallery": [],
+    "gallery": [
+      "/images/tournaments/The Edinburgh Cup/Edinburgh-Cup-2025-Action.jpg",
+      "/images/tournaments/The Edinburgh Cup/Edinburgh-Cup-2025-Boy-Action.jpg",
+      "/images/tournaments/The Edinburgh Cup/Edinburgh-Cup-2025-Celebrate.jpg",
+      "/images/tournaments/The Edinburgh Cup/Edinburgh-Cup-2025-Group.jpg",
+      "/images/tournaments/The Edinburgh Cup/Edinburgh-Cup-2025-Trophy.jpg",
+      "/images/tournaments/The Edinburgh Cup/Edinburgh-Cup-Girls-Trophy.jpg"
+    ],
     "programOverview": "The Edinburgh International Cup is one of the UK’s leading youth football tournaments, held annually in the vibrant and historic city of Edinburgh. Taking place 7–9 August 2026, the competition brings together boys’ and girls’ teams aged 7 to 16, offering both competitive and festival-style formats to suit all levels. Matches are played across professional-quality venues, with game formats ranging from 4v4 to 11v11, ensuring every team can compete in a structure suited to their development stage and playing style. The tournament promotes teamwork, inclusivity, and enjoyment, creating a memorable football celebration for players, coaches, and families.",
     "programHighlights": [
       "UK's largest youth football tournament.",
@@ -80,84 +87,6 @@
     }
   },
   {
-    "slug": "T.I-manchester-cup",
-    "name": "The T.I Manchester Cup",
-    "city": "manchester",
-    "country": "england",
-    "shortDescription": "T.I Manchester Cup 2026 is a Premier international youth football tournament in Manchester with global teams, pro pitches, licensed referees, accommodation, transfers, and awards.",
-    "numberOfDays": 7,
-    "ageBand": "Boys - U7 to U19, Girls - U12, U14, U16, U18",
-    "season": "3rd - 5th April 2026",
-    "gallery": [],
-    "programOverview": "The T.I Manchester Cup 2026 is a premier international youth football tournament held in Manchester, UK, on April 4-5. It welcomes youth teams worldwide to compete on high-quality pitches with qualified referees, ensuring a professional and fair tournament experience. Participants receive full support, including accommodation with breakfast, airport and local transfers, and tournament entry. The event features multiple competition levels, awards for finalists, and opportunities for cultural exchange in Manchester. Customizable tour packages and extras like friendly matches and training camps are available to create a tailored, unforgettable football journey for teams and their families.",
-    "programHighlights": [
-      "UK's largest youth football tournament.",
-      "Competitive and festival entry options.",
-      "Age groups 7–16, with multiple match formats (4v4–11v11).",
-      "Hosted at high-quality Edinburgh football venues.",
-      "A vibrant, inclusive atmosphere for teams and families."
-    ],
-    "whatsIncluded": [
-      "Entry into the T.I Manchester Cup tournament",
-      "Full board accommodation at hotel",
-      "Qualified licensed match officials for all games",
-      "Airport transfers in Manchester to and from accommodation",
-      "Coach transfers between accommodation and tournament and excursions",
-      "On-site support from experienced staff throughout the tournament",
-      "Presentation of awards for finalists",
-      "Additional nights, friendly matches, and training sessions available",
-      "Match tickets (Subject to availability)"
-    ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Travel",
-        "description": "Flight Overnight flights to Manchester."
-      },
-      {
-        "day": 2,
-        "title": "Arrival + Training Block 1",
-        "description": "Arrive Manchester, meet Tour Director at airport, airport transfer, hotel check-in., Lunch and orientation meeting. Afternoon training session. Evening dinner."
-      },
-      {
-        "day": 3,
-        "title": "Sightseeing + Training Block 2",
-        "description": "Welcome meeting for tournament plus registration. Morning training session. Visit to National Football Museum. Old Trafford Stadium Tour. Team dinner."
-      },
-      {
-        "day": 4,
-        "title": "Tournament Day 1",
-        "description": "Morning group stage matches at premier Edinburgh football venues. Lunch break with team bonding and player rest. Afternoon matches continue and festival activities. Evening debrief and dinner."
-      },
-      {
-        "day": 5,
-        "title": "Tournament Day 2",
-        "description": "Continued group stage or knockout matches. Afternoon training session with Manchester City coaches. Group dinner"
-      },
-      {
-        "day": 6,
-        "title": "Tournament Day 3",
-        "description": "Semi-finals and finals matches at tournament venue. Award ceremony and celebrations. Team dinner and reflection on the tournament"
-      },
-      {
-        "day": 7,
-        "title": "Travel",
-        "description": "Return to US"
-      }
-    ],
-    "developmentFocus": {
-      "fixtures": "With Axis Football Tours, teams can compete in top-level international tournaments, facing opponents from around the world. All logistics are handled — including fixtures, pitch hire, referees, and travel — ensuring a seamless, professional experience. Tournaments provide a thrilling environment that builds confidence, resilience, teamwork, and unforgettable memories on the global stage.",
-      "training": "Teams travelling with Axis Football to participate in tournaments will have the opportunity to include training sessions either delivered by the team's own coaching staff or you can be trained by coaches from local professional club academies. All players will be given a Player Development Plan (PDP) highlighting an improvement plan regardless of the level they are currently at.",
-      "classroom": "At Axis Football Tours, tournament programmes can include dedicated classroom sessions to support team preparation. Through match analysis, tactical planning, opponent scouting, role clarity, and team-identity workshops, players build confidence, understanding, and cohesion before stepping onto the pitch. These sessions ensure teams arrive ready to compete with purpose and unity.",
-      "teamBonding": "During Tournaments delivered as part of your Axis Football Tour, we can provide meaningful team bonding experiences to strengthen unity and performance. Through shared activities, group challenges, guided reflection, and positive social time, players build trust, communication, and resilience. These moments deepen team identity and connection, helping squads compete with confidence, togetherness, and purpose on and off the pitch."
-    },
-    "accommodationMealsSafety": {
-      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs. Our accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out. We believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour. Typically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
-      "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site.",
-      "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
-    }
-  },
-  {
     "slug": "newcastle-summer-cup",
     "name": "The Newcastle Summer Cup",
     "city": "newcastle",
@@ -166,7 +95,11 @@
     "numberOfDays": 7,
     "ageBand": "U11 - U18",
     "season": "24th - 26th July 2026",
-    "gallery": [],
+    "gallery": [
+      "/images/tournaments/Newcastle Summer Cup/Newcastle Summer Cup Action jpeg.jpg",
+      "/images/tournaments/Newcastle Summer Cup/Newcastle Summer Cup Trophy.webp",
+      "/images/tournaments/Newcastle Summer Cup/Newcastle Uni.jpg"
+    ],
     "programOverview": "The Newcastle International Summer Cup is a youth football tournament hosted in Newcastle, celebrated for memorable matches and experiences from previous years. It welcomes teams from various from all over the world providing young players opportunities to compete, connect, and create lasting memories in a vibrant summer atmosphere.",
     "programHighlights": [
       "UK's largest youth football tournament.",
@@ -243,7 +176,11 @@
     "numberOfDays": 7,
     "ageBand": "U11 - U18",
     "season": "4th and 5th July 2026 ( Boys U11 to U17).18th and 19th July 2026 ( Girls U11 to U18).",
-    "gallery": [],
+    "gallery": [
+      "/images/tournaments/The Big One 2026/IMG-20251120-WA0041.jpg",
+      "/images/tournaments/The Big One 2026/IMG-20251120-WA0076.jpg",
+      "/images/tournaments/The Big One 2026/IMG-20251120-WA0077.jpg"
+    ],
     "programOverview": "The Big One 11v11 Youth Football Tournament 2026 is the UK’s premier youth football event, hosted at the University of Warwick Sports Village. Open to U12–U18 grassroots boys’ teams, it features elite A-grade pitches, professional officiating, and a fair play format with knockout stages. Teams enjoy 90–120 minutes of guaranteed play, AI filming for highlights, and awards including trophies and MVP recognition. With accommodation packages for a full weekend experience, this prestigious tournament offers a top showcase for young talent.",
     "programHighlights": [
       "UK's largest youth football tournament.",
@@ -318,8 +255,14 @@
     "shortDescription": "The Royal Pre-Season Cup at Bradfield College near London offers elite youth teams world-class natural grass pitches, top competition, training, and vibrant cultural exchange in a beautiful campus setting.",
     "numberOfDays": 7,
     "ageBand": "U11 - U18",
-    "season": "4th and 5th July 2026 ( Boys U11 to U17).18th and 19th July 2026 ( Girls U11 to U18).",
-    "gallery": [],
+    "season": "14th - 16th August 2026",
+    "gallery": [
+      "/images/tournaments/The Royal Pre Season Cup/Royal Pre Season Cup Facilities.jpg",
+      "/images/tournaments/The Royal Pre Season Cup/Royal Pre Season Cup2.jpg",
+      "/images/tournaments/The Royal Pre Season Cup/Royal Pre Season Cup3.jpg",
+      "/images/tournaments/The Royal Pre Season Cup/Royal Pre Season Cup4.jpg",
+      "/images/tournaments/The Royal Pre Season Cup/The Royal Pre Season Cup1.jpg"
+    ],
     "programOverview": "The Big One 11v11 Youth Football Tournament 2026 is the UK’s premier youth football event, hosted at the University of Warwick Sports Village. Open to U12–U18 grassroots boys’ teams, it features elite A-grade pitches, professional officiating, and a fair play format with knockout stages. Teams enjoy 90–120 minutes of guaranteed play, AI filming for highlights, and awards including trophies and MVP recognition. With accommodation packages for a full weekend experience, this prestigious tournament offers a top showcase for young talent.",
     "programHighlights": [
       "UK's largest youth football tournament.",
@@ -395,7 +338,12 @@
     "numberOfDays": 7,
     "ageBand": "U9 - U15 Boys | U12 Girls",
     "season": "3rd - 5th April 2026",
-    "gallery": [],
+    "gallery": [
+      "/images/tournaments/The UK International Cup/UK International Cup Celebrating.jpg",
+      "/images/tournaments/The UK International Cup/UK International Cup Facilities.jpg",
+      "/images/tournaments/The UK International Cup/UK International Cup Trophy.jpg",
+      "/images/tournaments/The UK International Cup/UK International Cup Trophy2.jpg"
+    ],
     "programOverview": "The Big One 11v11 Youth Football Tournament 2026 is the UK’s premier youth football event, hosted at the University of Warwick Sports Village. Open to U12–U18 grassroots boys’ teams, it features elite A-grade pitches, professional officiating, and a fair play format with knockout stages. Teams enjoy 90–120 minutes of guaranteed play, AI filming for highlights, and awards including trophies and MVP recognition. With accommodation packages for a full weekend experience, this prestigious tournament offers a top showcase for young talent.",
     "programHighlights": [
       "UK's largest youth football tournament.",
@@ -464,7 +412,12 @@
     "numberOfDays": 9,
     "ageBand": "U8-U19",
     "season": "1-5th July",
-    "gallery": [],
+    "gallery": [
+      "/images/tournaments/Salou Youth Cup/Salou Youth Cup 1 jpeg.jpg",
+      "/images/tournaments/Salou Youth Cup/Salou Youth Cup 2 jpeg.jpg",
+      "/images/tournaments/Salou Youth Cup/Salou Youth Cup 4 jpeg.jpg",
+      "/images/tournaments/Salou Youth Cup/Salou Youth Cup3.jpg"
+    ],
     "programOverview": "The Salou Youth Cup Verano 2026 takes place July 1–5 in Salou, Spain. Open to boys’ and girls’ teams born between 2007 and 2019, matches are played at Complex Futbol Salou on top-quality natural and artificial pitches. Teams enjoy a full football program with group games, playoffs, and finals, plus free time for excursions. Accommodation is provided in nearby hotels with a refundable damage deposit. Combining competitive football with Mediterranean leisure, the Salou Youth Cup offers an unforgettable summer tournament experience.",
     "programHighlights": [
       "Teams from all over the world",

@@ -40,9 +40,9 @@ export default function CoachEducationPage() {
               className="border border-gray-200 rounded-2xl bg-white hover:border-black transition overflow-hidden"
             >
               <div className="relative h-48 w-full bg-gray-100">
-                {course.heroImage && (
+                {course.gallery[0] && (
                   <Image
-                    src={course.heroImage}
+                    src={course.gallery[0]}
                     alt={course.name}
                     fill
                     className="object-cover"

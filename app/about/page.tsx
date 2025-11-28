@@ -2,6 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import BottomCTA from "../../components/how/BottomCTA";
 
+const clubLogos = [
+  "images/club-logos/2000px-Logo_of_AC_Milan.png",
+  "images/club-logos/aresenal-badge.png",
+  "images/club-logos/Black BG Wolves Badge RGB.png",
+  "images/club-logos/Bonaire_Football_Federation_logo.png",
+  "images/club-logos/CPFC-Primary-Badge-Web.png",
+  "images/club-logos/El_Salvador_crest.svg.png",
+  "images/club-logos/Everton_FC_logo.png",
+  "images/club-logos/FC_Inter_Milan_first_logo_(1908-1928).png",
+  "images/club-logos/Fútbol_Club_Atlas.svg.png",
+  "images/club-logos/Millonarios_Fútbol_Club_logo.png",
+  "images/club-logos/Philadelphia_Union_2018_logo.svg.png",
+  "images/club-logos/Rangers_FC.svg.png",
+  "images/club-logos/Sevilla_cf.png",
+  "images/club-logos/Sporting_Club_Jacksonville_primary_crest.png",
+  "images/club-logos/spurs-blue-compressed.png",
+  "images/club-logos/United_States_Soccer_Federation_logo_2016.svg.png",
+  "images/club-logos/WHUFC-Crest_21-Full-Colour_CMYK.png"
+];
+
 export default function AboutPage() {
   return (
     <main className="bg-white">
@@ -50,44 +70,34 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-6">Our Story</h2>
 
           <p className="text-sm md:text-base text-gray-700 mb-4">
-            At <strong>Axis Football Tours</strong>, we believe world-class football experiences should be within reach for everyone — 
-            players and coaches alike, no matter their level. Our mission is simple: to make elite-level tours accessible, 
+            At <strong>Axis Football Tours</strong>, we believe world-class football experiences should be within reach for everyone —
+            players and coaches alike, no matter their level. Our mission is simple: to make elite-level tours accessible,
             enjoyable, and unforgettable.
           </p>
 
           <p className="text-sm md:text-base text-gray-700 mb-4">
-            Behind Axis is a leadership team with a truly global footprint. With over 
-            <strong> 75 years of combined experience</strong> across professional football, international travel, and tournament 
+            Behind Axis is a leadership team with a truly global footprint. With over
+            <strong> 75 years of combined experience</strong> across professional football, international travel, and tournament
             organization, our experts bring unmatched insight and precision to every tour we design.
           </p>
 
           <p className="text-sm md:text-base text-gray-700 mb-6">
-            Our team has successfully built and delivered multiple <strong>professional club pre-season tours</strong> for some of the 
-            game’s most recognized names. That same level of expertise, attention to detail, and professional standard is exactly 
+            Our team has successfully built and delivered multiple <strong>professional club pre-season tours</strong> for some of the
+            game’s most recognized names. That same level of expertise, attention to detail, and professional standard is exactly
             what Axis brings to the wider sports tour industry today.
           </p>
 
           {/* Club logos grid */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 my-8">
-            {/* Repeat this block for each logo (replace with real images later) */}
-            <div className="w-full h-16 bg-gray-100 border border-gray-200 rounded flex items-center justify-center text-[10px] text-gray-400">
-              Logo
-            </div>
-            <div className="w-full h-16 bg-gray-100 border border-gray-200 rounded flex items-center justify-center text-[10px] text-gray-400">
-              Logo
-            </div>
-            <div className="w-full h-16 bg-gray-100 border border-gray-200 rounded flex items-center justify-center text-[10px] text-gray-400">
-              Logo
-            </div>
-            <div className="w-full h-16 bg-gray-100 border border-gray-200 rounded flex items-center justify-center text-[10px] text-gray-400">
-              Logo
-            </div>  
-            <div className="w-full h-16 bg-gray-100 border border-gray-200 rounded flex items-center justify-center text-[10px] text-gray-400">
-              Logo
-            </div>
-            <div className="w-full h-16 bg-gray-100 border border-gray-200 rounded flex items-center justify-center text-[10px] text-gray-400">
-              Logo
-            </div>
+
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-6 place-items-center">
+            {clubLogos.map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt="Club logo"
+                className="h-14 w-auto object-contain hover:grayscale-0 transition"
+              />
+            ))}
           </div>
 
           {/* Buttons */}

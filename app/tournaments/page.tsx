@@ -41,9 +41,9 @@ export default function TournamentsPage() {
               className="border border-gray-200 rounded-2xl bg-white hover:border-black transition overflow-hidden"
             >
               <div className="relative h-48 w-full bg-gray-100">
-                {tournament.heroImage && (
+                {tournament.gallery[0] && (
                   <Image
-                    src={tournament.heroImage}
+                    src={tournament.gallery[0]}
                     alt={tournament.name}
                     fill
                     className="object-cover"

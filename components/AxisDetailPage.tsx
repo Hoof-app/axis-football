@@ -218,13 +218,19 @@ function Badge({
   children: React.ReactNode;
   variant?: "solid" | "outline";
 }) {
-  const base =
-    "px-3 py-1 rounded-full text-xs md:text-[13px] border transition";
-  const styles =
-    variant === "solid"
-      ? "bg-gray-900 text-white border-gray-900"
-      : "bg-white text-gray-800 border-gray-300";
-  return <span className={`${base} ${styles}`}>{children}</span>;
+  const base = "px-3 py-1 rounded-full text-xs md:text-[13px] border transition";
+
+  const solid =
+    "text-white bg-gray-900 border-gray-900 hover:bg-axis-gold hover:border-axis-gold";
+
+  const outline =
+    "bg-white text-gray-800 border-gray-300 hover:border-axis-gold hover:text-axis-gold";
+
+  return (
+    <span className={`${base} ${variant === "solid" ? solid : outline}`}>
+      {children}
+    </span>
+  );
 }
 
 /* ----------------- TOUR SNAPSHOT + QUOTE ----------------- */

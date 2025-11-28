@@ -74,54 +74,39 @@
     },
     "trustedPartners": [
         {
-            "slug": "elite-tournaments",
-            "name": "Elite Tournaments",
-            "logo": "/images/partners/elite-tournaments.png"
-        },
-        {
             "slug": "coachfx360",
             "name": "CoachFX360",
-            "logo": "/images/partners/coachfx360.png"
+            "logo": "/images/partners/CoachFX-360-transparent.png"
         },
         {
             "slug": "elite-promotions-group",
             "name": "Elite Promotions Group",
-            "logo": "/images/partners/elite-promotions-group.png"
+            "logo": "/images/partners/EP_Logo.png"
         },
         {
             "slug": "fuse",
             "name": "Fuse",
-            "logo": "/images/partners/fuse.png"
+            "logo": "/images/partners/fuselogo_300x.png"
         },
         {
             "slug": "pts",
             "name": "PTS",
-            "logo": "/images/partners/pts.png"
+            "logo": "/images/partners/PTS.jpg"
         },
         {
             "slug": "tms",
             "name": "TMS",
-            "logo": "/images/partners/tms.png"
+            "logo": "/images/partners/tms-featured-image-logo.png"
         },
         {
             "slug": "elements",
             "name": "Elements",
-            "logo": "/images/partners/elements.png"
+            "logo": "/images/partners/CFXElements-LogoIcon-Black.png"
         },
         {
-            "slug": "coerver",
-            "name": "Coerver",
-            "logo": "/images/partners/coerver.png"
-        },
-        {
-            "slug": "onward-group",
-            "name": "Onward Group",
-            "logo": "/images/partners/onward-group.png"
-        },
-        {
-            "slug": "celtic-soccer-academy",
-            "name": "Celtic Soccer Academy",
-            "logo": "/images/partners/celtic-soccer-academy.png"
+            "slug": "elements",
+            "name": "Elite Tournaments",
+            "logo": "/images/partners/ET_Website.png"
         }
     ]
 }

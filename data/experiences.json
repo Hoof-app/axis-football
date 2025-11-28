@@ -3,13 +3,20 @@
     "slug": "london-premier-league-club-tour",
     "name": "London Premier League Club Tour",
     "city": "London",
-    "country": "Scotland",
+    "country": "England",
     "shortDescription": "Experience the ultimate Premier League fan tour in London — live matches, thrilling European nights under the lights, exclusive Q&As with former managers, VIP social events, and iconic city sightseeing.",
     "numberOfDays": 7,
-    "ageBand": "7 - 16 Years",
+    "ageBand": "Adults",
     "season": "September - December",
     "gallery": [
-
+      "/images/experiences/premier_league_experience/Chelsea Stadium.jpg",
+      "/images/experiences/premier_league_experience/Emirates Stadium.jpg",
+      "/images/experiences/premier_league_experience/London 1.jpg",
+      "/images/experiences/premier_league_experience/London 2.jpg",
+      "/images/experiences/premier_league_experience/London 3.jpg",
+      "/images/experiences/premier_league_experience/London 4.jpg",
+      "/images/experiences/premier_league_experience/London 5.jpg",
+      "/images/experiences/premier_league_experience/Tottenham hotspur stadium.jpg"
     ],
     "programOverview": "Immerse yourself in the heart of English football with the Premier League Experience in London — the ultimate trip for passionate fans. Witness live Premier League and European fixtures under the floodlights, featuring London’s biggest clubs. Between matchdays, enjoy exclusive evening events with former managers and players, explore the city’s most famous landmarks, and indulge in unforgettable dining and social experiences. This is more than a football tour — it’s the definitive London football adventure.",
     "programHighlights": [
@@ -83,17 +90,19 @@
     "country": "Spain",
     "shortDescription": "Experience the passion of La Liga in Spain — live matches, vibrant fan culture, exclusive Q&As with football insiders, premium dining, and unforgettable sightseeing in Barcelona and Madrid.",
     "numberOfDays": 7,
-    "ageBand": "Boys - U7 to U19, Girls - U12, U14, U16, U18",
+    "ageBand": "Adults",
     "season": "September - December",
     "gallery": [
-      "/images/experiences/premier_league_experience/Chelsea Stadium.jpg",
-      "/images/experiences/premier_league_experience/Emirates Stadium.jpg",
-      "/images/experiences/premier_league_experience/London 1.jpg",
-      "/images/experiences/premier_league_experience/London 2.jpg",
-      "/images/experiences/premier_league_experience/London 3.jpg",
-      "/images/experiences/premier_league_experience/London 4.jpg",
-      "/images/experiences/premier_league_experience/London 5.jpg",
-      "/images/experiences/premier_league_experience/Tottenham hotspur stadium.jpg"
+      "/images/experiences/laliga_experience/La Liga - Thumb.png",
+      "/images/experiences/laliga_experience/La Liga 1.jpg",
+      "/images/experiences/laliga_experience/La Liga 2.png",
+      "/images/experiences/laliga_experience/La Liga 3.png",
+      "/images/experiences/laliga_experience/La Liga 4.png",
+      "/images/experiences/laliga_experience/La Liga 5.png",
+      "/images/experiences/laliga_experience/La Liga 6.png",
+      "/images/experiences/laliga_experience/La Liga 7.png",
+      "/images/experiences/laliga_experience/La Liga 8.png",
+      "/images/experiences/laliga_experience/La Liga 9.png"
     ],
     "programOverview": "Dive into the electrifying world of La Liga with an adults-only football journey crafted for true lovers of the Spanish game. Travel through Barcelona, Madrid, or Valencia as you witness world-class teams in action, soaking in the energy of Spain’s most passionate stadiums. Off the pitch, enjoy exclusive evening gatherings with former professionals or industry insiders, savour award-winning cuisine, explore iconic cultural landmarks, and experience the vibrant nightlife that makes Spanish cities legendary. This is the ultimate blend of football, culture, and premium travel — an unforgettable adventure curated by Axis Football Tours.",
     "programHighlights": [

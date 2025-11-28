@@ -20,27 +20,25 @@ export default function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
       <div className="max-w-7xl mx-auto w-full px-8 h-20 flex items-center justify-between">
-        
+
         {/* LEFT — ORIGINAL LOGO */}
-        <div className="flex-shrink-0 flex items-center gap-3">
-
-          {/* <div className="w-10 h-10 bg-black text-white flex items-center justify-center rounded">
-            A
-          </div> */}
-
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo/axis-a-black.png"
-              alt="Axis Football Logo"
-              width={42}
-              height={42}
-              className="object-contain"
-            />
-            <span className="font-semibold tracking-wide text-[15px] text-[#222]">
-              Axis Football Tours
-            </span>
-          </div>
-        </div>
+        <Link href="/" className="flex items-center gap-2 group">
+          <Image
+            src="/logo/axis-a-black.png"
+            alt="Axis Football Logo"
+            width={42}
+            height={42}
+            className="object-contain group-hover:hidden"
+          />
+          <Image
+            src="/logo/axis-a-gold.png"
+            alt="Axis Football Logo Gold"
+            width={42}
+            height={42}
+            className="object-contain hidden group-hover:block"
+          />
+          <span className="text-lg font-semibold">Axis Football Tours</span>
+        </Link>
 
         {/* CENTER — NAVIGATION */}
         <nav className="hidden md:flex flex-1 justify-center">
@@ -60,7 +58,6 @@ export default function Header() {
         {/* RIGHT — ORIGINAL RECTANGLE CTA BUTTON */}
         <div className="hidden md:flex flex-shrink-0">
           <Link href="/contact" className="hidden md:inline-block border px-4 py-2">Enquire Now</Link>
-
         </div>
 
         {/* MOBILE MENU BUTTON */}

@@ -40,9 +40,9 @@ export default function TrainingCampsPage() {
               className="border border-gray-200 rounded-2xl bg-white hover:border-black transition overflow-hidden"
             >
               <div className="relative h-48 w-full bg-gray-100">
-                {camp.heroImage && (
+                {camp.gallery[0] && (
                   <Image
-                    src={camp.heroImage}
+                    src={camp.gallery[0]}
                     alt={camp.name}
                     fill
                     className="object-cover"
