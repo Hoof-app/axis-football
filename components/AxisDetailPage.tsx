@@ -26,7 +26,7 @@ import React from "react";
  */
 
 export interface AxisDetailData {
-  type?: "tournament" | "trainingCamp" | "coachEducation" | "experiences" ;
+  type?: "tournament" | "trainingCamp" | "coachEducation" | "experiences";
   slug?: string;
   name: string;
   shortDescription?: string;
@@ -114,15 +114,15 @@ function HeroSection({ data }: { data: AxisDetailData }) {
         <div className="grid gap-10 md:grid-cols-2 items-start">
           {/* Left: Text */}
           <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-3">
-            {data.type === "trainingCamp"
-              ? "Training Camp"
-              : data.type === "coachEducation"
-              ? "Coach Education"
-              : data.type === "experiences"
-              ? "Experiences"
-              : "Tournament"}
-          </p>
+            <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-3">
+              {data.type === "trainingCamp"
+                ? "Training Camp"
+                : data.type === "coachEducation"
+                  ? "Coach Education"
+                  : data.type === "experiences"
+                    ? "Experiences"
+                    : "Tournament"}
+            </p>
 
             <h1 className="text-3xl md:text-4xl font-semibold mb-3">
               {data.name}
@@ -197,9 +197,8 @@ function HeroSection({ data }: { data: AxisDetailData }) {
                 {gallery.map((_, i) => (
                   <div
                     key={i}
-                    className={`h-1.5 w-1.5 rounded-full transition-all ${
-                      i === index ? "bg-white" : "bg-white/40"
-                    }`}
+                    className={`h-1.5 w-1.5 rounded-full transition-all ${i === index ? "bg-white" : "bg-white/40"
+                      }`}
                   />
                 ))}
               </div>
@@ -393,19 +392,19 @@ export function QuoteForm() {
         <div className="pt-2 flex flex-col gap-2">
           <button
             type="button"
-            onClick={handleSubmit}
-            disabled={loading}
-            className="w-full rounded-full border border-black bg-black px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition disabled:opacity-50"
+            className="w-full rounded-full border border-black bg-black px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition"
           >
-            {loading ? "Sending..." : "Send"}
+            Send
           </button>
 
-          <button
-            type="button"
-            className="w-full rounded-full border border-black px-4 py-2 text-sm font-medium text-black hover:bg-black hover:text-white transition"
+          <a
+            href="https://calendly.com/davidgraypt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full text-center rounded-full border border-black px-4 py-2 text-sm font-medium text-black hover:bg-axis-gold hover:border-axis-gold hover:text-white transition"
           >
             Schedule a call
-          </button>
+          </a>
         </div>
       </form>
 

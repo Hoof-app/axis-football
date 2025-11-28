@@ -277,18 +277,22 @@ export default function ContactPage() {
               <button
                 onClick={handleSubmit}
                 disabled={!consent || loading}
-                className={`rounded-full px-6 py-2 text-sm font-semibold transition ${
-                  consent
+                className={`rounded-full px-6 py-2 text-sm font-semibold transition ${consent
                     ? "bg-black text-white border border-black hover:bg-white hover:text-black"
                     : "bg-gray-300 text-gray-500 border border-gray-300 cursor-not-allowed"
-                }`}
+                  }`}
               >
                 {loading ? "Sending..." : "Submit Request"}
               </button>
 
-              <button className="rounded-full px-6 py-2 text-sm font-semibold border border-black text-black hover:bg-black hover:text-white transition">
+              <a
+                href="https://calendly.com/davidgraypt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full px-6 py-2 text-sm font-semibold border border-black text-black hover:bg-axis-gold hover:border-axis-gold hover:text-white transition inline-flex items-center justify-center"
+              >
                 Schedule Call
-              </button>
+              </a>
             </div>
 
             {status === "success" && (
