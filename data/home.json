@@ -2,7 +2,13 @@
     "hero": {
         "title": "Experience World-Class Soccer Tours",
         "subtitle": "Immersive soccer development trips for players, coaches and parents to bucket list destinations across the UK, Europe and the USA.",
-        "image": "/images/hero/home-hero.jpg",
+        "gallery": [
+            "/images/home/gallery/Homepage 1.jpg",
+            "/images/home/gallery/Homepage 2.jpg",
+            "/images/home/gallery/Homepage 3.jpg",
+            "/images/home/gallery/Homepage 4.jpg",
+            "/images/home/gallery/Homepage 5.jpg"
+        ],
         "features": [
             {
                 "label": "3–14 Days"
@@ -37,21 +43,30 @@
             "name": "Salou Youth Cup",
             "city": "Salou",
             "country": "Spain",
-            "image": "/images/tournaments/salou-youth-cup.jpg"
+            "image": "/images/tournaments/Salou Youth Cup/Salou Youth Cup3.jpg",
+            "numberOfDays": 9,
+            "ageBand": "U8-U19",
+            "season": "1-5th July"
         },
         "trainingCamp": {
             "slug": "arsenal-training-experience",
             "name": "Arsenal Training Experience",
             "city": "London",
             "country": "England",
-            "image": "/images/training-camps/arsenal-training-experience.jpg"
+            "image": "/images/training-camps/arsenal/Arsenal Stadium.jpg",
+            "numberOfDays": "9",
+            "ageBand": "7 - 16 Years",
+            "season": "Easter"
         },
         "coachEducation": {
             "slug": "celtic-coaches-convention",
             "name": "Celtic Coaches Convention",
             "city": "Glasgow",
             "country": "Scotland",
-            "image": "/images/coach-education/celtic-coaches-convention.jpg"
+            "image": "/images/coach-education/celtic-convention/Celtic Convention - Thumb.png",
+            "numberOfDays": "7",
+            "ageBand": "Adults",
+            "season": "6th - 12th April"
         }
     },
     "whyChoose": {

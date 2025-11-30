@@ -286,7 +286,7 @@ export default function ContactPage() {
               </button>
 
               <a
-                href="https://calendly.com/davidgraypt"
+                href="https://calendly.com/dgray-axisfootballco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full px-6 py-2 text-sm font-semibold border border-black text-black hover:bg-axis-gold hover:border-axis-gold hover:text-white transition inline-flex items-center justify-center"

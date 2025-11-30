@@ -1,61 +1,34 @@
-// import Hero from '../components/Hero'
-// import TourCard from '../components/TourCard'
-// import fs from 'fs'
-// import path from 'path'
-
-// export default function Home() {
-//   const filePath = path.join(process.cwd(), 'data', 'tournaments.json')
-//   const tours = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-
-//   return (
-//     <div>
-//       <Hero />
-//       <section className="py-16">
-//         <div className="container">
-//           <h2 className="text-3xl font-semibold mb-8 text-center">Featured Tours</h2>
-//           <div className="grid md:grid-cols-3 gap-6">
-//             {tours.map((t: any) => (
-//               <TourCard key={t.slug} title={t.title} location={t.location} summary={t.summary} href={`/tournaments/${t.slug}`} />
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       <section className="bg-gray-50 py-16">
-//         <div className="container text-center">
-//           <h3 className="text-2xl font-semibold mb-4">Why Choose Axis Football Tours?</h3>
-//           <div className="grid md:grid-cols-3 gap-8 mt-8">
-//             <div>
-//               <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4"></div>
-//               <h4 className="font-semibold">30+ Years Experience</h4>
-//               <p className="text-sm text-gray-600">Delivering world-class training camps across the globe.</p>
-//             </div>
-//             <div>
-//               <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4"></div>
-//               <h4 className="font-semibold">Your Money Protected</h4>
-//               <p className="text-sm text-gray-600">Partnerships that protect customer payments and deposits.</p>
-//             </div>
-//             <div>
-//               <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4"></div>
-//               <h4 className="font-semibold">Tour Management</h4>
-//               <p className="text-sm text-gray-600">Dedicated Tour Directors with 24/7 on-ground support.</p>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   )
-// }
-
 // app/page.tsx
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { getHomeContent } from '../lib/data';
+import { useEffect, useState } from "react";
 
 export default function HomePage() {
   const home = getHomeContent() as any;
 
   const { hero, featured, trustedPartners, whyChoose } = home;
+
+    /* --- Gallery state --- */
+    const gallery = home.hero.gallery || [];
+    const [index, setIndex] = useState(0);
+  
+    useEffect(() => {
+      if (!gallery || gallery.length === 0) return;
+  
+      const interval = setInterval(() => {
+        setIndex((i) => (i + 1) % gallery.length);
+      }, 4000);
+  
+      return () => clearInterval(interval);
+    }, [gallery]);
+  
+    const currentImage =
+      gallery.length > 0
+        ? gallery[index]
+        : "/images/defaults/placeholder-hero.jpg";
 
   return (
     <main className="min-h-screen bg-white text-black">
@@ -99,81 +72,206 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-50">
-            {hero.image && (
-              <Image
-                src={hero.image}
-                alt={hero.title}
-                fill
-                className="object-cover"
-              />
+          {/* Right: Gallery replacing static hero image */}
+          <div className="relative w-full h-64 md:h-80 rounded-3xl border border-gray-200 bg-gray-50 overflow-hidden">
+            <Image
+              key={currentImage}
+              src={currentImage}
+              alt={home.name}
+              fill
+              className="object-cover transition-opacity duration-700"
+            />
+
+            {/* Optional gallery indicators (can remove if you prefer cleaner) */}
+            {gallery.length > 1 && (
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
+                {gallery.map((_, i) => (
+                  <div
+                    key={i}
+                    className={`h-1.5 w-1.5 rounded-full transition-all ${i === index ? "bg-white" : "bg-white/40"
+                      }`}
+                  />
+                ))}
+              </div>
             )}
           </div>
+
         </div>
       </section>
 
-      {/* FEATURED SECTION — White background */}
-      <section className="px-6 pb-16 md:px-12 lg:px-20 bg-white">
+      {/* FEATURED SECTION — Enhanced Version */}
+      <section className="px-6 pb-20 md:px-12 lg:px-20 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-semibold mb-6 text-black">
+          <h2 className="text-xl md:text-2xl font-semibold mb-8 text-black">
             Featured Experiences
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {/* Featured Tournament */}
-            <Link
-              href={`/tournaments/${featured.tournament.slug}`}
-              className="border border-gray-200 rounded-2xl p-5 bg-white hover:border-black transition"
-            >
-              <p className="text-[11px] uppercase tracking-[0.2em] text-gray-500 mb-2">
-                Featured Tournament
-              </p>
-              <h3 className="text-lg font-semibold text-black mb-1">
+          <div className="grid gap-10 md:grid-cols-3">
+
+            {/* --- FEATURED TOURNAMENT --- */}
+            <div className="border border-gray-200 rounded-2xl p-5 bg-white flex flex-col">
+              <h3 className="text-center text-lg font-semibold mb-4">Tournaments</h3>
+
+              <Link
+                href={`/tournaments/${featured.tournament.slug}`}
+                className="relative w-full h-48 rounded-xl overflow-hidden border border-gray-200 bg-gray-50 mb-4"
+              >
+                {featured.tournament.image && (
+                  <Image
+                    src={featured.tournament.image}
+                    alt={featured.tournament.name}
+                    fill
+                    className="object-cover"
+                  />
+                )}
+              </Link>
+
+              <p className="text-base font-semibold mt-1">
                 {featured.tournament.name}
-              </h3>
-              <p className="text-sm text-gray-600">
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
                 {featured.tournament.city}, {featured.tournament.country}
               </p>
-            </Link>
 
-            {/* Featured Training Camp */}
-            <Link
-              href={`/training-camps/${featured.trainingCamp.slug}`}
-              className="border border-gray-200 rounded-2xl p-5 bg-white hover:border-black transition"
-            >
-              <p className="text-[11px] uppercase tracking-[0.2em] text-gray-500 mb-2">
-                Featured Training Camp
-              </p>
-              <h3 className="text-lg font-semibold text-black mb-1">
+              {/* Updated Meta Tags */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.tournament.numberOfDays} Days
+                </span>
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.tournament.ageBand}
+                </span>
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.tournament.season}
+                </span>
+              </div>
+
+              <Link
+                href="/contact"
+                className="mt-auto text-center bg-black text-white py-2 rounded-lg text-sm font-medium"
+              >
+                Enquire now
+              </Link>
+
+              <Link
+                href="/tournaments"
+                className="mt-4 text-center text-sm underline text-gray-700 hover:text-black"
+              >
+                View all tournaments
+              </Link>
+            </div>
+
+            {/* --- FEATURED TRAINING CAMP --- */}
+            <div className="border border-gray-200 rounded-2xl p-5 bg-white flex flex-col">
+              <h3 className="text-center text-lg font-semibold mb-4">Training Camps</h3>
+
+              <Link
+                href={`/training-camps/${featured.trainingCamp.slug}`}
+                className="relative w-full h-48 rounded-xl overflow-hidden border border-gray-200 bg-gray-50 mb-4"
+              >
+                {featured.trainingCamp.image && (
+                  <Image
+                    src={featured.trainingCamp.image}
+                    alt={featured.trainingCamp.name}
+                    fill
+                    className="object-cover"
+                  />
+                )}
+              </Link>
+
+              <p className="text-base font-semibold mt-1">
                 {featured.trainingCamp.name}
-              </h3>
-              <p className="text-sm text-gray-600">
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
                 {featured.trainingCamp.city}, {featured.trainingCamp.country}
               </p>
-            </Link>
 
-            {/* Featured Coach Education */}
-            <Link
-              href={`/coach-education/${featured.coachEducation.slug}`}
-              className="border border-gray-200 rounded-2xl p-5 bg-white hover:border-black transition"
-            >
-              <p className="text-[11px] uppercase tracking-[0.2em] text-gray-500 mb-2">
-                Featured Coach Education
-              </p>
-              <h3 className="text-lg font-semibold text-black mb-1">
+              {/* Updated Meta Tags */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.trainingCamp.numberOfDays} Days
+                </span>
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.trainingCamp.ageBand}
+                </span>
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.trainingCamp.season}
+                </span>
+              </div>
+
+              <Link
+                href="/contact"
+                className="mt-auto text-center bg-black text-white py-2 rounded-lg text-sm font-medium"
+              >
+                Enquire now
+              </Link>
+
+              <Link
+                href="/training-camps"
+                className="mt-4 text-center text-sm underline text-gray-700 hover:text-black"
+              >
+                View all training camps
+              </Link>
+            </div>
+
+            {/* --- FEATURED COACH EDUCATION --- */}
+            <div className="border border-gray-200 rounded-2xl p-5 bg-white flex flex-col">
+              <h3 className="text-center text-lg font-semibold mb-4">Coach Education</h3>
+
+              <Link
+                href={`/coach-education/${featured.coachEducation.slug}`}
+                className="relative w-full h-48 rounded-xl overflow-hidden border border-gray-200 bg-gray-50 mb-4"
+              >
+                {featured.coachEducation.image && (
+                  <Image
+                    src={featured.coachEducation.image}
+                    alt={featured.coachEducation.name}
+                    fill
+                    className="object-cover"
+                  />
+                )}
+              </Link>
+
+              <p className="text-base font-semibold mt-1">
                 {featured.coachEducation.name}
-              </h3>
-              <p className="text-sm text-gray-600">
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
                 {featured.coachEducation.city}, {featured.coachEducation.country}
               </p>
-            </Link>
+
+              {/* Updated Meta Tags */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.coachEducation.numberOfDays} Days
+                </span>
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.coachEducation.ageBand}
+                </span>
+                <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs border border-gray-200">
+                  {featured.coachEducation.season}
+                </span>
+              </div>
+
+              <Link
+                href="/contact"
+                className="mt-auto text-center bg-black text-white py-2 rounded-lg text-sm font-medium"
+              >
+                Enquire now
+              </Link>
+
+              <Link
+                href="/coach-education"
+                className="mt-4 text-center text-sm underline text-gray-700 hover:text-black"
+              >
+                View all coach education
+              </Link>
+            </div>
+
           </div>
         </div>
       </section>
 
-
-      {/* WHY CHOOSE AXIS — Light grey section */}
+      {/* WHY CHOOSE AXIS — same as before */}
       {whyChoose && (
         <section className="px-6 py-16 md:px-12 lg:px-20 bg-gray-50 border-t border-gray-200">
           <div className="max-w-6xl mx-auto">
@@ -205,7 +303,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* PARTNERS — Light grey background */}
+      {/* PARTNERS — unchanged */}
       <section className="px-6 pb-20 pt-12 md:px-12 lg:px-20 bg-gray-50 border-t border-gray-200">
         <div className="max-w-6xl mx-auto">
           <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-5">
