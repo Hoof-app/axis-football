@@ -11,24 +11,24 @@ export default function HomePage() {
 
   const { hero, featured, trustedPartners, whyChoose } = home;
 
-    /* --- Gallery state --- */
-    const gallery = home.hero.gallery || [];
-    const [index, setIndex] = useState(0);
-  
-    useEffect(() => {
-      if (!gallery || gallery.length === 0) return;
-  
-      const interval = setInterval(() => {
-        setIndex((i) => (i + 1) % gallery.length);
-      }, 4000);
-  
-      return () => clearInterval(interval);
-    }, [gallery]);
-  
-    const currentImage =
-      gallery.length > 0
-        ? gallery[index]
-        : "/images/defaults/placeholder-hero.jpg";
+  /* --- Gallery state --- */
+  const gallery = home.hero.gallery || [];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (!gallery || gallery.length === 0) return;
+
+    const interval = setInterval(() => {
+      setIndex((i) => (i + 1) % gallery.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [gallery]);
+
+  const currentImage =
+    gallery.length > 0
+      ? gallery[index]
+      : "/images/defaults/placeholder-hero.jpg";
 
   return (
     <main className="min-h-screen bg-white text-black">
@@ -49,17 +49,21 @@ export default function HomePage() {
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {hero.features?.map((item: any) => (
                 <div
                   key={item.label}
                   className="border border-gray-200 rounded-xl px-3 py-2 text-gray-700 bg-white"
                 >
-                  {item.label}
+                  <p className="text-center text-[12px] font-semibold text-black leading-tight">
+                    {item.title}
+                  </p>
+                  <p className="text-center text-[11px] text-gray-600 leading-tight">
+                    {item.subtitle}
+                  </p>
                 </div>
               ))}
             </div>
-
             <div className="mt-8 flex flex-wrap gap-4">
               {hero.primaryCta && (
                 <Link
@@ -270,38 +274,59 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* WHY CHOOSE AXIS — same as before */}
+      {/* WHY CHOOSE AXIS — Light grey section */}
       {whyChoose && (
         <section className="px-6 py-16 md:px-12 lg:px-20 bg-gray-50 border-t border-gray-200">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-semibold mb-3 text-black">
-              {whyChoose.title || 'Why Choose Axis Football Tours?'}
-            </h2>
-            {whyChoose.intro && (
-              <p className="text-sm md:text-base text-gray-700 mb-8 max-w-3xl">
-                {whyChoose.intro}
-              </p>
-            )}
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {whyChoose.items?.map((item: any) => (
+            {/* SECTION TITLE */}
+            <h2 className="text-2xl md:text-3xl font-semibold mb-10 text-black">
+              {whyChoose.title || "Why Choose Axis Football Tours?"}
+            </h2>
+
+            {/* CARD GRID */}
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+              {whyChoose.items?.map((item: any, index: number) => (
                 <div
-                  key={item.title}
-                  className="bg-white border border-gray-200 rounded-2xl p-5"
+                  key={index}
+                  className="bg-white border border-gray-300 rounded-2xl p-6 md:p-8 shadow-sm"
                 >
-                  <h3 className="text-sm font-semibold mb-2 text-black">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-700">
+                  {/* ICON + TITLE ROW */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 border border-gray-300 rounded-xl flex items-center justify-center text-xs text-center">
+                      {item.icon ? (
+                        <Image
+                          src={item.icon}
+                          alt={item.title}
+                          width={40}
+                          height={40}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <span className="text-[11px] leading-tight text-gray-600">
+                          [Axis<br />Website<br />Icon]
+                        </span>
+                      )}
+                    </div>
+
+                    <h3 className="text-lg font-semibold text-black leading-snug">
+                      {item.title}
+                    </h3>
+                  </div>
+
+                  {/* DESCRIPTION (supports new lines) */}
+                  <p className="text-sm text-gray-700 whitespace-pre-line leading-relaxed">
                     {item.description}
                   </p>
                 </div>
               ))}
+
             </div>
           </div>
         </section>
       )}
+
 
       {/* PARTNERS — unchanged */}
       <section className="px-6 pb-20 pt-12 md:px-12 lg:px-20 bg-gray-50 border-t border-gray-200">

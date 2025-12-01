@@ -11,25 +11,28 @@
         ],
         "features": [
             {
-                "label": "3–14 Days"
+                "title": "3–14",
+                "subtitle": "Days"
             },
             {
-                "label": "U12 – Adults Age Range"
+                "title": "U12 – Adults",
+                "subtitle": "Age Range"
             },
             {
-                "label": "UEFA/USSF Training"
+                "title": "UEFA/USSF",
+                "subtitle": "Training"
             },
             {
-                "label": "Matched Levels Fixtures"
+                "title": "Matched Levels",
+                "subtitle": "Fixtures"
             },
             {
-                "label": "Tailored Plans"
+                "title": "Tailored Plans",
+                "subtitle": "Development"
             },
             {
-                "label": "Elite Level Facilities"
-            },
-            {
-                "label": "Iconic Experiences"
+                "title": "Iconic Experiences",
+                "subtitle": "Destinations"
             }
         ],
         "primaryCta": {
@@ -75,15 +78,33 @@
         "items": [
             {
                 "title": "30+ year experience",
-                "description": "Delivering world-class training camps across the globe."
+                "description": "Our 30+ year background is in delivering training camps for top professional clubs in Europe, North America and Latin America as well as operating at grassroots level. \n\n Axis Football brings this unmatched attention to detail, unrivalled access and development first approach to clubs, coaches and parents like you.",
+                "icon": "/images/home/icons/team-28.png"
             },
             {
                 "title": "Your Money Protected",
-                "description": "Partnerships that protect customer payments and deposits."
+                "description": "Axis Football Co safeguards customer payments through Protected Trust Services (PTS), which places all bookings in an independent Trust Account, keeping funds separate and secure. Money is only released once travel arrangements are confirmed, protecting you from business risks and supplier failure. \n\n The system complies with UK Package Travel Regulations and is independently audited for strong consumer protection. PTS is a trusted industry provider, offering transparency and security. ATOL protection will apply for flight-inclusive packages.",
+                "icon": "/images/home/icons/Money Protected.png"
             },
             {
                 "title": "Tour Management",
-                "description": "Dedicated Tour Directors with 24/7 on-ground support."
+                "description": "Our team’s priority is every traveler's safety and comfort. We understand that unexpected things can occur and we ensure that every eventuality has the support it needs. \n \n Every tour has a Tour Director assigned to be with the group 24 hours a day making sure you concentrate on the incredible experiences you’re having.",
+                "icon": "/images/home/icons/Tour management.jpg"
+            },
+            {
+                "title": "Insurance",
+                "description": "Giving you extra piece of mind, Axis Football can provide you with optional travel insurance which includes protection against accidents, illness and certain dental care.\n\n Enquire with us on additional insurance options available for your tour.",
+                "icon": "/images/home/icons/Insurance.png"
+            },
+            {
+                "title": "Enjoyment for all",
+                "description": "Our priority is your care & enjoyment, and we understand what that means at all levels of the game.\n\n If you are at an elite level, on the development pathway or you are more focused on just having fun - we have the tour for you. \n\n That goes for parents too. We make sure your experience is equally rewarding.",
+                "icon": "/images/home/icons/Everyone Happy.png"
+            },
+            {
+                "title": "Making dreams happen",
+                "description": "Each travelling tour is unique and highly valued by our staff. We take the time to understand all your needs to create a memorable and rewarding experience. \n\n Whether its tickets to see the biggest derby matches, training delivered by the world’s best coaches, excursions to some of the world’s most idyllic locations… our job is to make your dreams happen.",
+                "icon": "/images/home/icons/Dreams Come true.png"
             }
         ]
     },
