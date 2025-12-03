@@ -1,7 +1,7 @@
 import AxisDetailPage, {
   AxisDetailData,
-} from "@/../components/AxisDetailPage";
-import { getTournamentBySlug } from "@/../lib/data";
+} from "@/components/AxisDetailPage";
+import { getTournamentBySlug } from "@/lib/data";
 
 interface Params {
   params: { slug: string };

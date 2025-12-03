@@ -2,8 +2,8 @@
 
 import AxisDetailPage, {
   AxisDetailData,
-} from "@/../components/AxisDetailPage";
-import { getTrainingCampBySlug } from "@/../lib/data";
+} from "@/components/AxisDetailPage";
+import { getTrainingCampBySlug } from "@/lib/data";
 
 interface Params {
   params: { slug: string };

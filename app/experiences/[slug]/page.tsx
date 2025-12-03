@@ -2,8 +2,8 @@
 
 import AxisDetailPage, {
   AxisDetailData,
-} from "@/../components/AxisDetailPage";
-import { getExperienceBySlug } from "@/../lib/data";
+} from "@/components/AxisDetailPage";
+import { getExperienceBySlug } from "@/lib/data";
 
 interface Params {
   params: { slug: string };
