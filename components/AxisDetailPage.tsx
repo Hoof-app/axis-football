@@ -47,7 +47,7 @@ export interface AxisDetailData {
     classroom?: string;
     teamBonding?: string;
   };
-  accomMealsSafety?: {
+  accommodationMealsSafety?: {
     accommodation?: string;
     meals?: string;
     playerSafety?: string;
@@ -142,23 +142,57 @@ function HeroSection({ data }: { data: AxisDetailData }) {
 
             {/* Badges */}
             <div className="space-y-3 mb-6">
+
+              {/* Primary Badges */}
               {primaryBadges.length > 0 && (
                 <div className="flex flex-wrap gap-2">
                   {primaryBadges.map((label) => (
-                    <Badge key={label}>{label}</Badge>
-                  ))}
-                </div>
-              )}
-
-              {secondaryBadges.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {secondaryBadges.map((label) => (
-                    <Badge key={label} variant="outline">
+                    <Badge
+                      key={label}
+                      variant="solid"
+                      className="
+            rounded-full
+            px-4 py-2
+            text-sm leading-snug font-medium
+            whitespace-normal       /* allows wrapping */
+            break-words             /* handles long words */
+            h-auto                  /* dynamic height */
+            inline-flex
+            items-start             /* allow multiline alignment */
+            text-left
+          "
+                    >
                       {label}
                     </Badge>
                   ))}
                 </div>
               )}
+
+              {/* Secondary Badges */}
+              {secondaryBadges.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {secondaryBadges.map((label) => (
+                    <Badge
+                      key={label}
+                      variant="outline"
+                      className="
+            rounded-full
+            px-4 py-2
+            text-sm leading-snug font-medium
+            whitespace-normal
+            break-words
+            h-auto
+            inline-flex
+            items-start
+            text-left
+          "
+                    >
+                      {label}
+                    </Badge>
+                  ))}
+                </div>
+              )}
+
             </div>
 
             {/* Buttons */}
@@ -210,25 +244,25 @@ function HeroSection({ data }: { data: AxisDetailData }) {
   );
 }
 
-function Badge({
-  children,
-  variant = "solid",
-}: {
-  children: React.ReactNode;
-  variant?: "solid" | "outline";
-}) {
-  const base = "px-3 py-1 rounded-full text-xs md:text-[13px] border transition";
-
-  const solid =
-    "text-white bg-gray-900 border-gray-900 hover:bg-axis-gold hover:border-axis-gold";
-
-  const outline =
-    "bg-white text-gray-800 border-gray-300 hover:border-axis-gold hover:text-axis-gold";
-
+export function Badge({ children, variant }: any) {
   return (
-    <span className={`${base} ${variant === "solid" ? solid : outline}`}>
-      {children}
-    </span>
+    <span
+      className={`
+        inline-flex
+        items-center
+        px-4 py-1                 /* tighter height */
+        text-sm font-medium
+        leading-normal            /* proper line-height */
+        rounded-full              /* perfect pill */
+        whitespace-normal
+        break-words
+        h-auto
+        ${variant === "outline"
+          ? "border border-gray-300 text-gray-800 bg-white"
+          : "bg-black text-white"}
+      `}
+      dangerouslySetInnerHTML={{ __html: String(children).replace(/\n/g, "<br/>") }}
+    />
   );
 }
 
@@ -260,9 +294,21 @@ function TourSnapshotAndQuote({ data }: { data: AxisDetailData }) {
                   <h3 className="text-sm font-semibold mb-2">
                     Program Overview
                   </h3>
-                  <p className="text-sm text-gray-700 whitespace-pre-line">
+                  {/* <p className="text-sm text-gray-700 whitespace-pre-line">
                     {data.programOverview}
-                  </p>
+                  </p> */}
+
+                  <div
+                    className="text-sm text-gray-700 whitespace-pre-line"
+                    dangerouslySetInnerHTML={{
+                      __html: data.programOverview
+                        // Convert "- Something" into proper bullet lines
+                        .replace(/^- /gm, "• ")
+                        // Extra paragraph breaks preserved
+                        .replace(/\n\n/g, "<br/><br/>")
+                    }}
+                  />
+
                 </div>
               )}
 
@@ -447,9 +493,9 @@ function SampleItineraryAndExtras({ data }: { data: AxisDetailData }) {
                 key={day.day}
                 className="border border-gray-200 rounded-xl bg-gray-50 px-4 py-3"
               >
-                <p className="text-xs font-semibold text-gray-600 mb-1">
+                <p className="text-sm md:text-base font-semibold text-black mb-1">
                   Day {day.day}
-                  {day.title ? ` · ${day.title}` : ""}
+                  {day.title ? ` – ${day.title}` : ""}
                 </p>
                 <p className="text-sm text-gray-800 whitespace-pre-line">
                   {day.description}
@@ -481,9 +527,23 @@ function DevelopmentFocusSection({ data }: { data: AxisDetailData }) {
   const dev = data.developmentFocus;
   if (!dev) return null;
 
-  const hasAny =
-    dev.fixtures || dev.training || dev.classroom || dev.teamBonding;
-  if (!hasAny) return null;
+  // Convert object into entries
+  const entries = Object.entries(dev).filter(([, v]) => Boolean(v));
+  if (entries.length === 0) return null;
+
+  // Map keys to nicer display titles
+  const titleMap: Record<string, string> = {
+    fixtures: "Fixtures",
+    training: "Training",
+    classroom: "Classroom Sessions",
+    teamBonding: "Team Bonding, Awards & Feedback",
+
+    // Coach Education keys
+    academyVisits: "Academy Visits",
+    clinics: "On-Field Clinics",
+    workshopSessions: "Workshop Sessions",
+    qaSessions: "Q&A Sessions",
+  };
 
   return (
     <section className="py-10 border-b border-gray-200">
@@ -492,21 +552,13 @@ function DevelopmentFocusSection({ data }: { data: AxisDetailData }) {
       </h2>
 
       <div className="grid gap-4 md:grid-cols-2">
-        {dev.fixtures && (
-          <DevCard title="Fixtures" text={dev.fixtures} />
-        )}
-        {dev.training && (
-          <DevCard title="Training" text={dev.training} />
-        )}
-        {dev.classroom && (
-          <DevCard title="Classroom Sessions" text={dev.classroom} />
-        )}
-        {dev.teamBonding && (
+        {entries.map(([key, text]) => (
           <DevCard
-            title="Team Bonding, Awards & Feedback"
-            text={dev.teamBonding}
+            key={key}
+            title={titleMap[key] ?? key}
+            text={text}
           />
-        )}
+        ))}
       </div>
     </section>
   );
@@ -523,8 +575,34 @@ function DevCard({ title, text }: { title: string; text: string }) {
 
 /* ------------ ACCOMMODATION, MEALS & PLAYER SAFETY ------------ */
 
+// function AccommodationMealsSafetySection({ data }: { data: AxisDetailData }) {
+//   const info = data.accommodationMealsSafety;
+//   if (!info) return null;
+
+//   const hasAny = info.accommodation || info.meals || info.playerSafety;
+//   if (!hasAny) return null;
+
+//   return (
+//     <section className="py-10">
+//       <h2 className="text-xl md:text-2xl font-semibold mb-5">
+//         Accommodation, Meals & Player Safety
+//       </h2>
+
+//       <div className="grid gap-4 md:grid-cols-3">
+//         {info.accommodation && (
+//           <AMSCard title="Accommodation" text={info.accommodation} />
+//         )}
+//         {info.meals && <AMSCard title="Meals" text={info.meals} />}
+//         {info.playerSafety && (
+//           <AMSCard title="Player Safety" text={info.playerSafety} />
+//         )}
+//       </div>
+//     </section>
+//   );
+// }
+
 function AccommodationMealsSafetySection({ data }: { data: AxisDetailData }) {
-  const info = data.accomMealsSafety;
+  const info = data.accommodationMealsSafety;
   if (!info) return null;
 
   const hasAny = info.accommodation || info.meals || info.playerSafety;
@@ -536,19 +614,28 @@ function AccommodationMealsSafetySection({ data }: { data: AxisDetailData }) {
         Accommodation, Meals & Player Safety
       </h2>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        {info.accommodation && (
-          <AMSCard title="Accommodation" text={info.accommodation} />
-        )}
-        {info.meals && <AMSCard title="Meals" text={info.meals} />}
+      <div className="grid gap-4">
+        {/* TOP ROW — 2 horizontal cards */}
+        <div className="grid gap-4 md:grid-cols-2">
+          {info.accommodation && (
+            <AMSCard title="Accommodation" text={info.accommodation} />
+          )}
+
+          {info.meals && (
+            <AMSCard title="Meals" text={info.meals} />
+          )}
+        </div>
+
+        {/* BOTTOM ROW — 1 full-width card */}
         {info.playerSafety && (
-          <AMSCard title="Player Safety" text={info.playerSafety} />
+          <div className="mt-4">
+            <AMSCard title="Player Safety" text={info.playerSafety} />
+          </div>
         )}
       </div>
     </section>
   );
 }
-
 function AMSCard({ title, text }: { title: string; text: string }) {
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5">

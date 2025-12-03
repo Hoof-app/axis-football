@@ -38,7 +38,12 @@ export default function HowHeroSection() {
           {/* Right */}
           <div className="relative w-full h-64 md:h-80 rounded-3xl border border-gray-200 bg-gray-50 overflow-hidden">
             <div className="w-full h-full flex items-center justify-center text-xs text-gray-400">
-              [Axis Website – How it Works Hero Picture]
+              <Image
+                src="/images/how-it-works/How it Works.jpg"
+                alt="How It Works"
+                fill
+                className="object-cover"
+              />
             </div>
             {/* Replace with actual Image later */}
           </div>

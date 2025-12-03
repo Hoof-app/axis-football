@@ -38,7 +38,22 @@ export default function StepsSection() {
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col items-center">
               {/* Circle */}
-              <div className="w-16 h-16 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center text-xl font-semibold mb-3">
+              {/* <div className="w-16 h-16 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center text-xl font-semibold mb-3">
+                {step.number}
+              </div> */}
+
+              <div
+                className="
+    w-16 h-16
+    rounded-full
+    flex items-center justify-center
+    border border-axis-gold
+    bg-white
+    text-black
+    text-xl font-semibold
+    mb-3
+  "
+              >
                 {step.number}
               </div>
 

@@ -9,6 +9,7 @@
     "ageBand": "Adults",
     "season": "September - December",
     "gallery": [
+      "/images/experiences/premier_league_experience/Premeir League - Thumb.png",
       "/images/experiences/premier_league_experience/Chelsea Stadium.jpg",
       "/images/experiences/premier_league_experience/Emirates Stadium.jpg",
       "/images/experiences/premier_league_experience/London 1.jpg",
@@ -18,7 +19,7 @@
       "/images/experiences/premier_league_experience/London 5.jpg",
       "/images/experiences/premier_league_experience/Tottenham hotspur stadium.jpg"
     ],
-    "programOverview": "Immerse yourself in the heart of English football with the Premier League Experience in London — the ultimate trip for passionate fans. Witness live Premier League and European fixtures under the floodlights, featuring London’s biggest clubs. Between matchdays, enjoy exclusive evening events with former managers and players, explore the city’s most famous landmarks, and indulge in unforgettable dining and social experiences. This is more than a football tour — it’s the definitive London football adventure.",
+    "programOverview": "Immerse yourself in the heart of English football with the Premier League Experience in London — the ultimate trip for passionate fans. Witness live Premier League and European fixtures under the floodlights, featuring London’s biggest clubs.\n\nBetween matchdays, enjoy exclusive evening events with former managers and players, explore the city’s most famous landmarks, and indulge in unforgettable dining and social experiences.\n\nThis is more than a football tour — it’s the definitive London football adventure.\n\n• Watch live Premier League and European matches in London.\n• Exclusive Q&A evenings with former Premier League managers.\n• Premium social events in top bars and restaurants.\n• Guided tours of London’s iconic landmarks.\n• Expert-hosted football insights and match discussions.",
     "programHighlights": [
       " Watch live Premier League and European matches in London",
       "Exclusive Q&A evenings with former Premier League managers",
@@ -26,14 +27,14 @@
       "Guided tours of London’s iconic landmarks",
       "Expert-hosted football insights and match discussions"
     ],
-    "whatsIncluded": [
-      "Competitive fixtures in the Premier league, Champions League, Europa League and Conference league.",
-      "Exclusive stadium tours and behind-the-scenes club experiences.",
-      "High-quality accommodation with full-board meals.",
-      "Local transport for all activities, matches, and excursions.",
-      "Cultural and sightseeing experiences across London.",
-      "Tour Director support throughout for logistics and coordination."
-    ],
+"whatsIncluded": [
+  "Competitive fixtures in the Premier League, Champions League, Europa League, and Conference League.",
+  "Exclusive stadium tours and behind-the-scenes club experiences.",
+  "High-quality accommodation with full-board meals.",
+  "Local transport for all activities, matches, and excursions.",
+  "Cultural and sightseeing experiences across London.",
+  "Tour Director support throughout for logistics and coordination."
+],
     "itinerary": [
       {
         "day": 1,
@@ -78,7 +79,7 @@
       "teamBonding": "During tournaments delivered as part of your Axis Football Tour, we can provide meaningful team bonding experiences to strengthen unity and performance. Through shared activities, group challenges, guided reflection, and positive social time, players build trust, communication, and resilience."
     },
     "accommodationMealsSafety": {
-      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs. Our accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out. We believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour. Typically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant.",
+      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs.\n\nOur accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out.\n\nWe believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour.\n\nTypically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
       "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site.",
       "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
     }
@@ -104,7 +105,7 @@
       "/images/experiences/laliga_experience/La Liga 8.png",
       "/images/experiences/laliga_experience/La Liga 9.png"
     ],
-    "programOverview": "Dive into the electrifying world of La Liga with an adults-only football journey crafted for true lovers of the Spanish game. Travel through Barcelona, Madrid, or Valencia as you witness world-class teams in action, soaking in the energy of Spain’s most passionate stadiums. Off the pitch, enjoy exclusive evening gatherings with former professionals or industry insiders, savour award-winning cuisine, explore iconic cultural landmarks, and experience the vibrant nightlife that makes Spanish cities legendary. This is the ultimate blend of football, culture, and premium travel — an unforgettable adventure curated by Axis Football Tours.",
+    "programOverview": "Dive into the electrifying world of La Liga with an adults-only football journey crafted for true lovers of the Spanish game. Travel through Barcelona, Madrid, or Valencia as you witness world-class teams in action, soaking in the energy of Spain’s most passionate stadiums.\n\nOff the pitch, enjoy exclusive evening gatherings with former professionals or industry insiders, savour award-winning cuisine, explore iconic cultural landmarks, and experience the vibrant nightlife that makes Spanish cities legendary.\n\nThis is the ultimate blend of football, culture, and premium travel — an unforgettable adventure curated by Axis Football Tours.\n\n• Attend live La Liga and European fixtures in Spain’s most atmospheric stadiums.\n• Exceptional culinary experiences in hand-picked restaurants.\n• Guided cultural tours through Barcelona, Madrid, or Valencia.\n• Exclusive social events and insider-style football discussions.",
     "programHighlights": [
       "Attend live La Liga and European fixtures in Spain’s most atmospheric stadiums.",
       "Exceptional culinary experiences in hand-picked restaurants.",
@@ -164,7 +165,7 @@
       "teamBonding": "During Tournaments delivered as part of your Axis Football Tour, we can provide meaningful team bonding experiences to strengthen unity and performance. Through shared activities, group challenges, guided reflection, and positive social time, players build trust, communication, and resilience. These moments deepen team identity and connection, helping squads compete with confidence, togetherness, and purpose on and off the pitch."
     },
     "accommodationMealsSafety": {
-      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs. Our accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out. We believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour. Typically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
+      "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs.\n\nOur accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out.\n\nWe believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour.\n\nTypically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
       "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site.",
       "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
     }
