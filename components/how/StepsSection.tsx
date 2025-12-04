@@ -1,3 +1,5 @@
+import AnimateOnView from "../AnimateOnView";
+
 export default function StepsSection() {
   const steps = [
     {
@@ -28,6 +30,8 @@ export default function StepsSection() {
   ];
 
   return (
+          <AnimateOnView variant="fadeUp" delay={0.15} className="w-full">
+    
     <section className="border-b border-gray-200 bg-white">
       <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
         <h2 className="text-xl md:text-2xl font-semibold mb-10">
@@ -36,33 +40,30 @@ export default function StepsSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-5 gap-8 text-center">
           {steps.map((step) => (
-            <div key={step.number} className="flex flex-col items-center">
-              {/* Circle */}
-              {/* <div className="w-16 h-16 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center text-xl font-semibold mb-3">
-                {step.number}
-              </div> */}
-
-              <div
-                className="
-    w-16 h-16
-    rounded-full
-    flex items-center justify-center
-    border border-axis-gold
-    bg-white
-    text-black
-    text-xl font-semibold
-    mb-3
-  "
-              >
-                {step.number}
+            // <AnimateOnView key={step.number} variant="fadeUp" delay={0.15}>
+              <div className="flex flex-col items-center">
+                <div
+                  className="
+          w-16 h-16
+          rounded-full
+          flex items-center justify-center
+          border border-axis-gold
+          bg-white
+          text-black
+          text-xl font-semibold
+          mb-3
+        "
+                >
+                  {step.number}
+                </div>
+                <h3 className="font-medium mb-1">{step.title}</h3>
+                <p className="text-sm text-gray-600">{step.text}</p>
               </div>
-
-              <h3 className="font-medium mb-1">{step.title}</h3>
-              <p className="text-sm text-gray-600">{step.text}</p>
-            </div>
           ))}
         </div>
       </div>
     </section>
+                </AnimateOnView>
+
   );
 }

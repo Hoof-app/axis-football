@@ -1,3 +1,5 @@
+import AnimateOnView from "../AnimateOnView";
+
 const faqs = [
   {
     q: "How far in advance should we book?",
@@ -23,6 +25,8 @@ const faqs = [
 
 export default function FaqSection() {
   return (
+                  <AnimateOnView variant="fadeUp" delay={0.15} className="w-full">
+    
     <section className="border-b border-gray-200 bg-white">
       <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
         <h2 className="text-xl md:text-2xl font-semibold mb-10">
@@ -42,5 +46,7 @@ export default function FaqSection() {
         </div>
       </div>
     </section>
+                        </AnimateOnView>
+    
   );
 }

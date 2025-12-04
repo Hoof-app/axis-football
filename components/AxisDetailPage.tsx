@@ -4,6 +4,7 @@
 
 import Image from "next/image";
 import React from "react";
+import AnimateOnView from "../components/AnimateOnView";
 
 /**
  * Expected data shape (adjust as needed to match your JSON):
@@ -60,14 +61,24 @@ interface Props {
 
 export default function AxisDetailPage({ data }: Props) {
   return (
-    <main className="bg-white text-black">
-      <HeroSection data={data} />
+    <main className="bg-white text-black pt-24">
+      <AnimateOnView variant="fadeUp">
+        <HeroSection data={data} />
+      </AnimateOnView>
 
       <div className="max-w-5xl mx-auto px-6 pb-16">
-        <TourSnapshotAndQuote data={data} />
-        <SampleItineraryAndExtras data={data} />
-        <DevelopmentFocusSection data={data} />
-        <AccommodationMealsSafetySection data={data} />
+        <AnimateOnView variant="fadeUp">
+          <TourSnapshotAndQuote data={data} />
+        </AnimateOnView>
+        <AnimateOnView variant="fadeUp">
+          <SampleItineraryAndExtras data={data} />
+        </AnimateOnView>
+        <AnimateOnView variant="fadeUp">
+          <DevelopmentFocusSection data={data} />
+        </AnimateOnView>
+        <AnimateOnView variant="fadeUp">
+          <AccommodationMealsSafetySection data={data} />
+        </AnimateOnView>
       </div>
     </main>
   );
@@ -199,7 +210,7 @@ function HeroSection({ data }: { data: AxisDetailData }) {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#quote"
-                className="inline-flex items-center justify-center rounded-full border border-black bg-black px-5 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition"
+                className="inline-flex items-center justify-center rounded-full border border-black bg-black px-6 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition"
               >
                 Enquire now
               </a>
@@ -207,7 +218,7 @@ function HeroSection({ data }: { data: AxisDetailData }) {
               {data.itinerary && data.itinerary.length > 0 && (
                 <a
                   href="#itinerary"
-                  className="inline-flex items-center justify-center rounded-full border border-black px-5 py-2 text-sm font-medium text-black hover:bg-black hover:text-white transition"
+                  className="inline-flex items-center justify-center rounded-full border border-axis-gold px-6 py-2 text-sm font-medium text-axis-gold hover:bg-axis-gold hover:text-white transition"
                 >
                   Sample itinerary
                 </a>
@@ -438,16 +449,23 @@ export function QuoteForm() {
         <div className="pt-2 flex flex-col gap-2">
           <button
             type="button"
-            className="w-full rounded-full border border-black bg-black px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition"
+            onClick={handleSubmit}
+            disabled={loading}
+            className={
+              "w-full inline-flex items-center justify-center rounded-full border px-6 py-2 text-sm font-medium transition " +
+              (loading
+                ? "border-gray-300 bg-gray-200 text-gray-500 cursor-not-allowed"
+                : "border-black bg-black text-white hover:bg-white hover:text-black")
+            }
           >
-            Send
+            {loading ? "Sending..." : "Send"}
           </button>
 
           <a
             href="https://calendly.com/davidgraypt"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full text-center rounded-full border border-black px-4 py-2 text-sm font-medium text-black hover:bg-axis-gold hover:border-axis-gold hover:text-white transition"
+            className="w-full inline-flex items-center justify-center text-center rounded-full border border-axis-gold px-6 py-2 text-sm font-medium text-axis-gold hover:bg-axis-gold hover:text-white transition"
           >
             Schedule a call
           </a>

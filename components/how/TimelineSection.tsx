@@ -1,3 +1,5 @@
+import AnimateOnView from "../AnimateOnView";
+
 export default function TimelineSection() {
   const items = [
     {
@@ -23,6 +25,8 @@ export default function TimelineSection() {
   ];
 
   return (
+              <AnimateOnView variant="fadeUp" delay={0.15} className="w-full">
+    
     <section className="border-b border-gray-200 bg-white">
       <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
         <h2 className="text-xl md:text-2xl font-semibold mb-10">Timeline</h2>
@@ -60,5 +64,7 @@ export default function TimelineSection() {
 </div>
       </div>
     </section>
+                    </AnimateOnView>
+    
   );
 }

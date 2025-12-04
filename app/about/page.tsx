@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import BottomCTA from "../../components/how/BottomCTA";
+import AnimateOnView from "@/components/AnimateOnView";
 
 const clubLogos = [
   "images/club-logos/2000px-Logo_of_AC_Milan.png",
@@ -25,7 +26,10 @@ const clubLogos = [
 export default function AboutPage() {
   return (
     <main className="bg-white">
+                  <div className="h-20 md:h-24"></div>
+
       {/* ---------------------- HERO SECTION ---------------------- */}
+      <AnimateOnView variant="fadeUp">
       <section className="border-b border-gray-200 py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
           {/* Text */}
@@ -56,15 +60,22 @@ export default function AboutPage() {
               Enquire Now
             </Link>
           </div>
-
-          {/* Image placeholder */}
-          <div className="w-full h-64 md:h-80 bg-gray-100 border border-gray-200 rounded-2xl flex items-center justify-center text-xs text-gray-500">
-            [Axis Website – About Us Picture 1]
+          {/* Hero Image */}
+          <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden border border-gray-200">
+            <Image
+              src="/images/about/about.png"   // <-- update this path with your actual file
+              alt="Axis Football Tours – About Us"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
+      </AnimateOnView>
 
       {/* ---------------------- OUR STORY ---------------------- */}
+      <AnimateOnView variant="fadeUp" delay={0.15}>
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-semibold mb-6">Our Story</h2>
@@ -89,40 +100,55 @@ export default function AboutPage() {
 
           {/* Club logos grid */}
 
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-6 place-items-center">
-            {clubLogos.map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt="Club logo"
-                className="h-14 w-auto object-contain hover:grayscale-0 transition"
-              />
-            ))}
-          </div>
+<div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 mt-10">
+
+  {clubLogos.map((src, i) => (
+    <div
+      key={i}
+      className="
+        w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32
+        flex items-center justify-center
+        rounded-xl bg-white border border-gray-200
+        shadow-sm 
+        hover:grayscale-0
+        hover:shadow-md transition-all duration-300
+        opacity-0 animate-fadeIn
+      "
+    >
+      <img
+        src={src}
+        alt="Club logo"
+        className="max-h-16 w-auto object-contain"
+      />
+    </div>
+  ))}
+
+</div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-8">
             <Link
               href="/tournaments"
-              className="rounded-full border border-black px-6 py-2 text-sm font-medium text-black hover:bg-black hover:text-white transition"
+              className="inline-flex items-center justify-center rounded-full border border-axis-gold text-axis-gold bg-transparent px-6 py-2 text-sm font-medium hover:bg-axis-gold hover:text-white transition"
             >
               View all tournaments
             </Link>
             <Link
               href="/training-camps"
-              className="rounded-full border border-black px-6 py-2 text-sm font-medium text-black hover:bg-black hover:text-white transition"
+              className="inline-flex items-center justify-center rounded-full border border-axis-gold text-axis-gold bg-transparent px-6 py-2 text-sm font-medium hover:bg-axis-gold hover:text-white transition"
             >
               View all training camps
             </Link>
             <Link
               href="/coach-education"
-              className="rounded-full border border-black px-6 py-2 text-sm font-medium text-black hover:bg-black hover:text-white transition"
+              className="inline-flex items-center justify-center rounded-full border border-axis-gold text-axis-gold bg-transparent px-6 py-2 text-sm font-medium hover:bg-axis-gold hover:text-white transition"
             >
               View all coach education
             </Link>
           </div>
         </div>
       </section>
+      </AnimateOnView>
 
       {/* Bottom CTA */}
       <BottomCTA />

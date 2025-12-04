@@ -86,6 +86,7 @@ export default function ContactPage() {
 
   return (
     <main className="bg-white">
+      <div className="h-20 md:h-24"></div>
 
       {/* ---------------------- HERO ---------------------- */}
       <section className="border-b border-gray-200 py-12 md:py-16">
@@ -277,10 +278,11 @@ export default function ContactPage() {
               <button
                 onClick={handleSubmit}
                 disabled={!consent || loading}
-                className={`rounded-full px-6 py-2 text-sm font-semibold transition ${consent
-                    ? "bg-black text-white border border-black hover:bg-white hover:text-black"
-                    : "bg-gray-300 text-gray-500 border border-gray-300 cursor-not-allowed"
-                  }`}
+                className={`rounded-full px-6 py-2.5 text-sm font-medium transition
+  ${consent
+    ? "bg-black text-white border border-black hover:bg-white hover:text-black"
+    : "bg-gray-300 text-gray-500 border border-gray-300 cursor-not-allowed"
+  }`}
               >
                 {loading ? "Sending..." : "Submit Request"}
               </button>
@@ -289,7 +291,7 @@ export default function ContactPage() {
                 href="https://calendly.com/dgray-axisfootballco"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full px-6 py-2 text-sm font-semibold border border-black text-black hover:bg-axis-gold hover:border-axis-gold hover:text-white transition inline-flex items-center justify-center"
+                className="rounded-full px-6 py-2.5 text-sm font-medium border border-axis-gold text-axis-gold hover:bg-axis-gold hover:text-white transition inline-flex items-center justify-center"
               >
                 Schedule Call
               </a>
