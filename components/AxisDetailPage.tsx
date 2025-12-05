@@ -475,8 +475,8 @@ export function QuoteForm() {
       <p className="mt-4 text-xs text-gray-500">We reply within 1 business day.</p>
       <p className="mt-2 text-xs text-gray-500">
         Or email us at{" "}
-        <a href="mailto:sales@axisfootballco.com" className="underline underline-offset-2">
-          sales@axisfootballco.com
+        <a href="mailto:dgray@axisfootballco.com" className="underline underline-offset-2">
+          dgray@axisfootballco.com
         </a>{" "}
         anytime.
       </p>
