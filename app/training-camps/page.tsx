@@ -44,7 +44,7 @@ export default function TrainingCampsPage() {
 
               <Link
                 href={`/training-camps/${camp.slug}`}
-                              className="border border-gray-200 rounded-2xl bg-white transition overflow-hidden hover:border-[#b5840b]">
+                className="border border-gray-200 rounded-2xl bg-white transition overflow-hidden hover:border-[#b5840b]">
                 <div className="relative h-48 w-full bg-gray-100">
                   {camp.gallery[0] && (
                     <Image

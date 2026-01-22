@@ -346,36 +346,41 @@
       },
       {
         "day": 2,
-        "title": "Training Block 2 + Fixture 1",
-        "description": "Morning training by Benfica coaches. Afternoon team bonding games. Evening fixture versus local opponent. "
+        "title": "Arrival + Training Block 1 + Match",
+        "description": "Flight. Overnight flights to Lisbon."
       },
       {
         "day": 3,
+        "title": "Training Block 2 + Fixture 1",
+        "description": "Arrive Lisbon, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. Afternoon training by Benfica coaches. Portuguese Match"
+      },
+      {
+        "day": 4,
         "title": "Sightseeing + Training Block 3",
         "description": "Morning City Tour including Benfica Stadium and Museum tour. Afternoon training session with Benfica coaches. Team dinner."
       },
       {
-        "day": 4,
+        "day": 5,
         "title": "Training Block 4 + Sightseeing",
         "description": "Morning training with Benfica coaches. Lunch. Afternoon José Alvalade Stadium tour and Museum."
       },
       {
-        "day": 5,
+        "day": 6,
         "title": "Training Block 5 + Fixture 2",
         "description": "Morning training session with Sporting Lisbon coaches. Afternoon beach trip. Evening fixture versus local opponent."
       },
       {
-        "day": 6,
+        "day": 7,
         "title": "Training Block 6",
         "description": "Visit to Foot Lab. Afternoon training session with Sporting Lisbon coaches. Team dinner."
       },
       {
-        "day": 7,
+        "day": 8,
         "title": "Training Block 7 + Fixture 3 + Awards dinner.",
         "description": "Morning training by Sporting Lisbon coaches. Lunch at stadium. Evening fixture versus local opponent. Evening awards dinner."
       },
       {
-        "day": 8,
+        "day": 9,
         "title": "Travel",
         "description": "Depart from Lisbon, airport transfers."
       }
