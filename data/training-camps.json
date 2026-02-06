@@ -1,13 +1,13 @@
 [
   {
     "slug": "arsenal-training-experience",
-    "name": "Arsenal Training Experience",
+    "name": "Arsenal Training Experience powered by Fuse (BALTIMORE MANIA INVITE ONLY)",
     "city": "London",
     "country": "England",
     "shortDescription": "Train at the iconic Arsenal FC — one of football’s most successful clubs — with expert coaches, exclusive access, and unforgettable experiences at Emirates Stadium and beyond.",
     "numberOfDays": "9",
     "ageBand": "7 - 16 Years",
-    "season": "Easter",
+    "season": "22 - 29 Nov 2026",
     "gallery": [
       "/images/training-camps/arsenal/Arsenal Stadium.jpg",
       "/images/training-camps/arsenal/Arsenal Training.jpg",
@@ -15,7 +15,7 @@
       "/images/training-camps/arsenal/Arsenal Celebration.jpg",
       "/images/training-camps/arsenal/Arsenal Champions.jpg"
     ],
-    "programOverview": "Step into the world of champions with the Arsenal Football Experience — an exclusive opportunity to train at one of the most iconic and successful clubs in world football.\n\nLed by Arsenal Football Development Coaches, participants will refine their skills using the same principles and philosophies that have shaped generations of Premier League greats.\n\nBeyond elite coaching sessions, enjoy behind-the-scenes access to the Emirates Stadium, a Q&A with former players, and unforgettable cultural excursions across London.\n\nThis is more than training — it’s your chance to live the Arsenal legacy and experience football excellence at its source.\n\n• Train under official Arsenal Football Development Coaches.\n• Exclusive guided tours of the Emirates Stadium and Arsenal Museum.\n• Meet and learn from former Arsenal players or managers.\n• Receive an official adidas Arsenal tour kit.\n• Experience professional matches and London sightseeing.",
+    "programOverview": "Following your success in the Baltimore Mania event delivered by our partners Elite Tournaments you are now invited to step into the world of champions with the Arsenal Football Experience powered by FUSE Soccer — an exclusive opportunity to train at one of the most iconic and successful clubs in world football.\n\nLed by Arsenal Football Development Coaches, participants will refine their skills using the same principles and philosophies that have shaped generations of Premier League greats. Beyond elite coaching sessions, enjoy behind-the-scenes access to the Emirates Stadium, experience an English Premier league match, play against local teams and unforgettable cultural excursions across London.\n\nOur Experiences are built around Arsenal's \"Strong Young Gunner\" model, with 4 distint development areas:  \n\n1. Effective team player\n2. Efficient mover\n3. Lifelong learner\n4. Champion mentality.\n\nThis is more than training — it’s your chance to live the Arsenal legacy and experience football excellence at its source.",
     "programHighlights": [
       "Airport & excursion transport.",
       "High quality accommodation and full-board meals.",
@@ -33,11 +33,11 @@
       "High quality accommodation and full-board meals.",
       "Exclusive adidas tour kit.",
       "Emirates Stadium guided tour.",
-      "Q & A with a former player or manager.",
+      "Private London Bus Tour.",
       "Arsenal Football Development Coaches.",
-      "7 days of training.",
+      "6 days of Arsenal Football Development training.",
       "Training self-assessment booklet.",
-      "Evening activities.",
+      "Evening activities including Thanksgiving Dinner at Hard Rock Cafe.",
       "Matches against local opposition."
     ],
     "itinerary": [
@@ -49,42 +49,37 @@
       {
         "day": 2,
         "title": "Arrival + Training Block 1",
-        "description": "Arrive London, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. Arsenal coaching in afternoon. Evening dinner. "
+        "description": "Arrive London, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. Arsenal coaching in afternoon. Evening dinner."
       },
       {
         "day": 3,
-        "title": "Sightseeing + Match",
-        "description": "London City Tour. Premier League Match 1."
+        "title": "Training Block 2 + Sightseeing + Fixture 1",
+        "description": "Arsenal coaching in morning. London City Tour in afternoon. Evening fixture 1 against local opponent."
       },
       {
         "day": 4,
-        "title": "Training Block 2",
-        "description": "Arsenal coaching in morning. Stadium Tour, Q&A with former Player in afternoon. Evening fixture."
+        "title": "Training Block 3 + Sightseeing + Watch Party",
+        "description": "Wembley Tour in morning. Arsenal coaching in afternoon. Champions League Watch Party at night. "
       },
       {
         "day": 5,
-        "title": "Training Block 3 + Fixture 1",
-        "description": "Arsenal coaching in morning. London Bus Tour. Evening Fixture."
+        "title": "Training Block 4 + Stadium Tour + Fixture 2",
+        "description": "Arsenal coaching in morning. Arsenal stadium tour. Evening fixture 2 against local opponent. Thanksgiving Dinner at Hard Rock Cafe."
       },
       {
         "day": 6,
-        "title": "Arsenal Sightseeing + Training Block 4",
-        "description": "Highbury Tour. Emirates Tour / Arsenal Museum. Arsenal coaching in evening."
+        "title": "Training Block 5 + Training Block 6",
+        "description": "Arsneal coaching in morning. Arsenal coaching in afternoon. Free time in evening."
       },
       {
         "day": 7,
-        "title": "Training Block 5 + Tour",
-        "description": "Arsenal coaching in morning. Wembley Tour. Evening team dinner"
+        "title": "Player feedback session + EPL Match + Awards Ceremony",
+        "description": "Player feedback session in morning. EPL match in afternoon. Evening awards dinner"
       },
       {
         "day": 8,
-        "title": "Training Block 6 + Match",
-        "description": "Arsenal coaching in morning. Lunch awards ceremony. Premier League Match."
-      },
-      {
-        "day": 9,
-        "title": "Travel",
-        "description": "Departure from London, airport transfers"
+        "title": "Free Time + EPL Match + Departure",
+        "description": "Free time in morning. EPL Match in afternoon. Airport transfers and departure in evening."
       }
     ],
     "developmentFocus": {

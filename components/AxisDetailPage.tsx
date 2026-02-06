@@ -340,7 +340,7 @@ function TourSnapshotAndQuote({ data }: { data: AxisDetailData }) {
         </div>
 
         {/* Right: Quote Form */}
-        <QuoteForm />
+        <QuoteForm data={data} />
       </div>
     </section>
   );
@@ -349,16 +349,28 @@ function TourSnapshotAndQuote({ data }: { data: AxisDetailData }) {
 import Input from "../components/Input";
 import Textarea from "../components/Textarea";
 
-export function QuoteForm() {
+export function QuoteForm({ data }: { data: AxisDetailData }) {
   const [loading, setLoading] = useState(false);
+  const isArsenalTrainingExperience =
+    data?.slug === "arsenal-training-experience" ||
+    data?.slug === "arsenal" ||
+    data?.name?.toLowerCase?.().includes("arsenal");
+
   const [values, setValues] = useState({
     name: "",
     email: "",
+
+    // Default (non-Arsenal) fields
     group: "",
     dates: "",
-    ageGroup: "",
     locations: "",
     goals: "",
+
+    // Arsenal fields
+    clubName: "",
+    teamName: "",
+    boysOrGirls: "",
+    ageGroup: "",
   });
 
   function update(field: string, value: string) {
@@ -371,7 +383,26 @@ export function QuoteForm() {
     const res = await fetch("/api/quote", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
+      body: JSON.stringify(
+        isArsenalTrainingExperience
+          ? {
+              name: values.name,
+              email: values.email,
+              clubName: values.clubName,
+              teamName: values.teamName,
+              boysOrGirls: values.boysOrGirls,
+              ageGroup: values.ageGroup,
+            }
+          : {
+              name: values.name,
+              email: values.email,
+              group: values.group,
+              dates: values.dates,
+              ageGroup: values.ageGroup,
+              locations: values.locations,
+              goals: values.goals,
+            }
+      ),
     });
 
     setLoading(false);
@@ -383,9 +414,12 @@ export function QuoteForm() {
         email: "",
         group: "",
         dates: "",
-        ageGroup: "",
         locations: "",
         goals: "",
+        clubName: "",
+        teamName: "",
+        boysOrGirls: "",
+        ageGroup: "",
       });
     } else {
       alert("Something went wrong. Please try again.");
@@ -398,7 +432,7 @@ export function QuoteForm() {
       className="md:sticky md:top-24 self-start bg-white border border-gray-200 rounded-2xl p-5 shadow-sm/50"
     >
       <h2 className="text-base md:text-lg font-semibold mb-4">
-        Request a Quick Quote
+        {isArsenalTrainingExperience ? "Request Further Information" : "Request a Quick Quote"}
       </h2>
 
       <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
@@ -415,36 +449,78 @@ export function QuoteForm() {
           onChange={(e) => update("email", e.target.value)}
         />
 
-        <Input
-          label="Club/School/Group Name"
-          value={values.group}
-          onChange={(e) => update("group", e.target.value)}
-        />
+        {isArsenalTrainingExperience && (
+          <>
+            <Input
+              label="Club Name"
+              value={values.clubName}
+              onChange={(e) => update("clubName", e.target.value)}
+            />
 
-        <Input
-          label="Target Dates"
-          value={values.dates}
-          onChange={(e) => update("dates", e.target.value)}
-        />
+            <Input
+              label="Team Name"
+              value={values.teamName}
+              onChange={(e) => update("teamName", e.target.value)}
+            />
 
-        <Input
-          label="Age Group"
-          value={values.ageGroup}
-          onChange={(e) => update("ageGroup", e.target.value)}
-        />
+            <div className="space-y-1">
+              <label className="block text-sm font-medium text-gray-700">
+                Boys or Girls
+              </label>
+              <select
+                value={values.boysOrGirls}
+                onChange={(e) => update("boysOrGirls", e.target.value)}
+                required
+                className="w-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-axis-gold"
+              >
+                <option value="">Select</option>
+                <option value="Boys">Boys</option>
+                <option value="Girls">Girls</option>
+              </select>
+            </div>
 
-        <Input
-          label="Locations Interested In"
-          value={values.locations}
-          onChange={(e) => update("locations", e.target.value)}
-        />
+            <Input
+              label="Age Group"
+              value={values.ageGroup}
+              onChange={(e) => update("ageGroup", e.target.value)}
+            />
+          </>
+        )}
 
-        <Textarea
-          label="Goals for Tour"
-          value={values.goals}
-          onChange={(e) => update("goals", e.target.value)}
-          rows={3}
-        />
+        {!isArsenalTrainingExperience && (
+          <>
+            <Input
+              label="Club/School/Group Name"
+              value={values.group}
+              onChange={(e) => update("group", e.target.value)}
+            />
+
+            <Input
+              label="Target Dates"
+              value={values.dates}
+              onChange={(e) => update("dates", e.target.value)}
+            />
+
+            <Input
+              label="Age Group"
+              value={values.ageGroup}
+              onChange={(e) => update("ageGroup", e.target.value)}
+            />
+
+            <Input
+              label="Locations Interested In"
+              value={values.locations}
+              onChange={(e) => update("locations", e.target.value)}
+            />
+
+            <Textarea
+              label="Goals for Tour"
+              value={values.goals}
+              onChange={(e) => update("goals", e.target.value)}
+              rows={3}
+            />
+          </>
+        )}
 
         <div className="pt-2 flex flex-col gap-2">
           <button
