@@ -7,7 +7,7 @@
     "shortDescription": "Train at the iconic Arsenal FC — one of football’s most successful clubs — with expert coaches, exclusive access, and unforgettable experiences at Emirates Stadium and beyond.",
     "numberOfDays": "9",
     "ageBand": "7 - 16 Years",
-    "season": "22 - 29 Nov 2026",
+    "season": "22 - 30 Nov 2026",
     "gallery": [
       "/images/training-camps/arsenal/Arsenal Stadium.jpg",
       "/images/training-camps/arsenal/Arsenal Training.jpg",
@@ -78,8 +78,13 @@
       },
       {
         "day": 8,
-        "title": "Free Time + EPL Match + Departure",
-        "description": "Free time in morning. EPL Match in afternoon. Airport transfers and departure in evening."
+        "title": "PFree Time + EPL Match",
+        "description": "Free time in morning. EPL Match in afternoon."
+      },
+      {
+        "day": 9,
+        "title": "Departure",
+        "description": "Airport transfers and departure."
       }
     ],
     "developmentFocus": {
