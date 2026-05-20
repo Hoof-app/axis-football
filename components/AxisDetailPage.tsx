@@ -369,6 +369,7 @@ export function QuoteForm({ data }: { data: AxisDetailData }) {
     // Arsenal fields
     clubName: "",
     teamName: "",
+    playerNames: "",
     boysOrGirls: "",
     ageGroup: "",
   });
@@ -390,6 +391,7 @@ export function QuoteForm({ data }: { data: AxisDetailData }) {
               email: values.email,
               clubName: values.clubName,
               teamName: values.teamName,
+              playerNames: values.playerNames,
               boysOrGirls: values.boysOrGirls,
               ageGroup: values.ageGroup,
             }
@@ -418,6 +420,7 @@ export function QuoteForm({ data }: { data: AxisDetailData }) {
         goals: "",
         clubName: "",
         teamName: "",
+        playerNames: "",
         boysOrGirls: "",
         ageGroup: "",
       });
@@ -461,6 +464,12 @@ export function QuoteForm({ data }: { data: AxisDetailData }) {
               label="Team Name"
               value={values.teamName}
               onChange={(e) => update("teamName", e.target.value)}
+            />
+
+            <Input
+              label="Player(s) Name(s)"
+              value={values.playerNames}
+              onChange={(e) => update("playerNames", e.target.value)}
             />
 
             <div className="space-y-1">
@@ -578,7 +587,7 @@ function SampleItineraryAndExtras({ data }: { data: AxisDetailData }) {
             id="sample-itinerary-title"
             className="text-xl md:text-2xl font-semibold mb-5"
           >
-            Sample Team Itinerary
+            Sample Itinerary
           </h2>
 
           <div className="space-y-3">

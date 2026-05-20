@@ -1,7 +1,7 @@
 [
   {
     "slug": "arsenal-training-experience",
-    "name": "Arsenal Training Experience powered by Fuse (BALTIMORE MANIA INVITE ONLY)",
+    "name": "Arsenal Training Experience powered by Fuse",
     "city": "London",
     "country": "England",
     "shortDescription": "Train at the iconic Arsenal FC — one of football’s most successful clubs — with expert coaches, exclusive access, and unforgettable experiences at Emirates Stadium and beyond.",
@@ -85,106 +85,6 @@
         "day": 9,
         "title": "Departure",
         "description": "Airport transfers and departure."
-      }
-    ],
-    "developmentFocus": {
-      "fixtures": "With Axis Football Tours, teams enjoy thrilling fixtures against carefully matched local opponents, tailored by age and ability. Every match is fully organised — with pitch hire, referees, and all travel costs included — for a seamless, professional experience. For an even greater challenge, we can also arrange entry into international tournaments, giving players the unforgettable experience of competing in a global football environment against teams from around the world.",
-      "training": "Teams travelling with Axis Football will have the exclusive opportunity to be trained by coaches from local professional club academies. All players will be given a Player Development Plan (PDP) highlighting an improvement plan regardless of the level they are currently at.",
-      "classroom": "All Axis Football Tours benefit from purposeful classroom development sessions, designed to enhance understanding beyond the pitch. Whether analysing match footage, exploring tactical principles, engaging in Q&A discussions with professional players, or strengthening team identity through workshops, these sessions ensure every player grows technically, tactically, and personally as part of their tour experience.",
-      "teamBonding": "At Axis Football Tours, team bonding is central to every itinerary. We create purposeful moments that build trust, communication, and resilience — strengthening the connections that drive performance. Through shared experiences, group challenges, and guided reflection, players develop deeper understanding of one another, enhancing unity on and off the pitch."
-    },
-    "accommodationMealsSafety": {
-     "accommodation": "With Axis Football Tours, every detail of your stay is designed to match the prestige of your football experience. We’ve partnered with a handpicked collection of exceptional hotels across the globe — each offering first-class comfort, style, and amenities perfectly suited to your team’s needs.\n\nOur accommodations are carefully selected for their prime locations — whether steps away from elite training facilities or set within resort-style complexes offering outstanding sports and leisure options. Every property meets our rigorous standards for quality, safety, and service, ensuring a seamless and inspiring experience from check-in to check-out.\n\nWe believe your surroundings should elevate your performance. That’s why we exclusively feature premium 3 and 4-star hotels, chosen to provide superior comfort and a touch of luxury throughout your tour.\n\nTypically based on 2–4 persons sharing, your full-board package includes delicious, nutritious meals — with lunches served at the hotel or training complex, and evening dining experiences either at your accommodation or a quality local restaurant. (Comparable alternatives may occasionally be used if your featured hotel is unavailable.)",
-      "meals": "We have half and full board options for travelling groups depending on your needs. We recommend the full board for most of our groups knowing that you have everything taken care of on site.",
-      "playerSafety": "We only work with accredited partners ensuring you have a safe and stress-free tour. Risk assessments are completed for all our tours and support is provided 24/7 by our team and on the ground with your very own Tour Director."
-    }
-  },
-  {
-    "slug": "tottenham-hotspur-coaching-experience",
-    "name": "Tottenham Hotspur Coaching Experience",
-    "city": "London",
-    "country": "England",
-    "shortDescription": "Train with Tottenham Hotspur, reigning Europa League Champions, at one of football’s most dynamic clubs — world-class coaching, exclusive access, and unforgettable moments at the stunning Tottenham Hotspur Stadium.",
-    "numberOfDays": "9",
-    "ageBand": "7 - 16 Years",
-    "season": "Thanksgiving",
-    "gallery": [
-      "/images/training-camps/tottenham/Tottenham Hotspur Stadium.jpg",
-      "/images/training-camps/tottenham/Tottenham Hotspur Training.jpg",
-      "/images/training-camps/tottenham/Tottenham Hotspur Academy.jpg",
-      "/images/training-camps/tottenham/Tottenham Hotspur Celebration.jpg",
-      "/images/training-camps/tottenham/Tottenham Hotspur Champions.jpg"
-    ],
-    "programOverview": "Immerse yourself in Europa League Champions, Tottenham Hotspur Football with this incredible experience — your chance to train, play, and live like a Premier League star.\n\nLed by Tottenham Hotspur Global Development Coaches, you’ll take your skills to the next level, learning the fast, attacking style that defines the Spurs identity.\nFrom unforgettable training sessions and exclusive behind-the-scenes access to exploring the spectacular Tottenham Hotspur Stadium, this is an opportunity bursting with energy, inspiration, and true football magic.\n\nExperience what it means to train the Spurs way — where talent, teamwork, and ambition come together.\n\n• Train with official Tottenham Hotspur Global Development Coaches.\n• Step inside the incredible Tottenham Hotspur Stadium and Club Museum.\n• Experience Premier League matchdays and live London’s energy.\n• Meet and learn from former Spurs players.\n• Take home your official Nike Tottenham tour kit.",
-    "programHighlights": [
-      "Train with Tottenham Hotspur Global Development Coaches",
-      "Over 24 hours of elite coaching across five days",
-      "Competitive fixtures against local opposition teams",
-      "Q&A with a former Spurs player or coach",
-      "Tottenham Hotspur Stadium and Club Museum tour",
-      "Official Nike Tottenham Hotspur tour kit",
-      "Exciting evening activities and team events",
-      "Personal training performance booklet",
-      "High quality accommodation and full-board meals",
-      "Airport and excursion transport"
-    ],
-    "whatsIncluded": [
-      "Train with Tottenham Hotspur Global Development Coaches",
-      "Over 24 hours of elite coaching across five days",
-      "Competitive fixtures against local opposition teams",
-      "Q&A with a former Spurs player or coach",
-      "Tottenham Hotspur Stadium and Club Museum tour",
-      "Official Nike Tottenham Hotspur tour kit",
-      "Exciting evening activities and team events",
-      "Personal training performance booklet",
-      "High quality accommodation and full-board meals",
-      "Airport and excursion transport"
-    ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Travel",
-        "description": "Flight. Overnight flights to London."
-      },
-      {
-        "day": 2,
-        "title": "Arrival + Training Block 1",
-        "description": "Arrive London, meet Tour Director at airport, airport transfer, hotel check-in. Lunch and orientation meeting. Arsenal coaching in afternoon. Evening dinner. "
-      },
-      {
-        "day": 3,
-        "title": "Sightseeing + Match",
-        "description": "London City Tour. Premier League Match 1."
-      },
-      {
-        "day": 4,
-        "title": "Training Block 2",
-        "description": "Arsenal coaching in morning. Stadium Tour, Q&A with former Player in afternoon. Evening fixture."
-      },
-      {
-        "day": 5,
-        "title": "Training Block 3 + Fixture 1",
-        "description": "Arsenal coaching in morning. London Bus Tour. Evening Fixture."
-      },
-      {
-        "day": 6,
-        "title": "Arsenal Sightseeing + Training Block 4",
-        "description": "Highbury Tour. Emirates Tour / Arsenal Museum. Arsenal coaching in evening."
-      },
-      {
-        "day": 7,
-        "title": "Training Block 5 + Tour",
-        "description": "Arsenal coaching in morning. Wembley Tour. Evening team dinner"
-      },
-      {
-        "day": 8,
-        "title": "Training Block 6 + Match",
-        "description": "Arsenal coaching in morning. Lunch awards ceremony. Premier League Match."
-      },
-      {
-        "day": 9,
-        "title": "Travel",
-        "description": "Departure from London, airport transfers"
       }
     ],
     "developmentFocus": {

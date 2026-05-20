@@ -18,7 +18,6 @@ const clubLogos = [
   "images/club-logos/Rangers_FC.svg.png",
   "images/club-logos/Sevilla_cf.png",
   "images/club-logos/Sporting_Club_Jacksonville_primary_crest.png",
-  "images/club-logos/spurs-blue-compressed.png",
   "images/club-logos/United_States_Soccer_Federation_logo_2016.svg.png",
   "images/club-logos/WHUFC-Crest_21-Full-Colour_CMYK.png"
 ];
