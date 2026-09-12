@@ -34,6 +34,15 @@ export default function Footer() {
             <h5 className="font-semibold text-black mb-1">Company</h5>
             <ul className="space-y-1">
               <li><Link href="/about">About Us</Link></li>
+              <li>
+                <a
+                  href="/terms-and-conditions.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Terms &amp; Conditions
+                </a>
+              </li>
               {/* <li><Link href="/careers">Careers</Link></li> */}
             </ul>
           </div>
