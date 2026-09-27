@@ -63,7 +63,15 @@ export default function Footer() {
             <h5 className="font-semibold text-black mb-1">Contact</h5>
             <ul className="space-y-1">
               <li><Link href="/contact">Enquire Now</Link></li>
-              <li><Link href="/privacy">Privacy Policy</Link></li>
+              <li>
+                <a
+                  href="/privacy-policy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </li>
             </ul>
           </div>
 
