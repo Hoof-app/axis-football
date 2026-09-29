@@ -43,6 +43,15 @@ export default function Footer() {
                   Terms &amp; Conditions
                 </a>
               </li>
+              <li>
+                <a
+                  href="/privacy-policy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </li>
               {/* <li><Link href="/careers">Careers</Link></li> */}
             </ul>
           </div>
@@ -63,15 +72,6 @@ export default function Footer() {
             <h5 className="font-semibold text-black mb-1">Contact</h5>
             <ul className="space-y-1">
               <li><Link href="/contact">Enquire Now</Link></li>
-              <li>
-                <a
-                  href="/privacy-policy.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Privacy Policy
-                </a>
-              </li>
             </ul>
           </div>
 
